@@ -1,0 +1,124 @@
+cherypadang.id.	14400	A	
+103.247.11.218
+ 
+cherypadang.id.	14400	MX	
+Priority: 0
+Destination: cherypadang.id
+ 
+mail.cherypadang.id.	14400	CNAME	
+cherypadang.id
+ 
+www.cherypadang.id.	14400	CNAME	
+cherypadang.id
+ 
+ftp.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+cherypadang.id.	14400	TXT	
+v=spf1 ip4:103.247.11.216 ip4:103.247.11.218 +a +mx ~all
+ 
+webmail.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+_caldav._tcp.cherypadang.id.	14400	SRV	
+Priority: 0
+Weight: 0
+Port: 2079
+Target: cherypadang.id
+ 
+_caldav._tcp.cherypadang.id.	14400	TXT	
+path=/
+ 
+autoconfig.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+_caldavs._tcp.cherypadang.id.	14400	SRV	
+Priority: 0
+Weight: 0
+Port: 2080
+Target: cherypadang.id
+ 
+_caldavs._tcp.cherypadang.id.	14400	TXT	
+path=/
+ 
+_autodiscover._tcp.cherypadang.id.	14400	SRV	
+Priority: 0
+Weight: 0
+Port: 443
+Target: cpanelemaildiscovery.cpanel.net
+ 
+cpcontacts.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+autodiscover.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+whm.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+cpanel.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+cpcalendars.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+_carddavs._tcp.cherypadang.id.	14400	SRV	
+Priority: 0
+Weight: 0
+Port: 2080
+Target: cherypadang.id
+ 
+_carddavs._tcp.cherypadang.id.	14400	TXT	
+path=/
+ 
+webdisk.cherypadang.id.	14400	A	
+103.247.11.218
+ 
+_carddav._tcp.cherypadang.id.	14400	SRV	
+Priority: 0
+Weight: 0
+Port: 2079
+Target: cherypadang.id
+ 
+_carddav._tcp.cherypadang.id.	14400	TXT	
+path=/
+ 
+_dmarc.cherypadang.id.	14400	TXT	
+v=DMARC1; p=none;
+ 
+default._domainkey.cherypadang.id.	14400	TXT	
+v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkJr1d4eRY0EM/E2OKzBlXayYcV0evxv7KGWuNq+rBlnmai54BhSrYAy1XBDbG8zCdDzxqVb20QYtbJvoTT9U7XjJYrZOwgc6Lc5RQuxU2d9VdOz+Wjon0fpCNppmQQ3UWjcb+VBc6Q7ctq9jIgNDAEovwrvc317E92QAyVw7yBcWBdzUJ5kN4VoJySIG+2FAb
+JB6peiVHH9wdUi/sDQ95RRZwB4RSAU1i6u9STZEbjBSmpDlG4ru6vp4SJt1SvQFTgU9XLzDSOae/DZQZh8za363asvLqpyAdK+b6hWC/7I8l216a3vgRrjFiysKxxxb6d1vO03+DxvtnFR/JSHw+QIDAQAB;
+ 
+webdisk.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+ftp.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+cpcalendars.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+autoconfig.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+cpcontacts.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+ipv6.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+autodiscover.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+webmail.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+whm.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320
+ 
+cpanel.cherypadang.id.	14400	AAAA	
+2001:df0:27b:2::a:320

@@ -1,0 +1,57 @@
+;; Zone Editor di Cloudflare:
+;; ===============================
+;; Domain:     cherypadang.id.
+;; Exported:   2025-06-16 01:42:46
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+cherypadang.id	3600	IN	SOA	leland.ns.cloudflare.com. dns.cloudflare.com. 2050170476 10000 2400 604800 3600
+
+;; NS Records
+cherypadang.id.	86400	IN	NS	leland.ns.cloudflare.com.
+cherypadang.id.	86400	IN	NS	raquel.ns.cloudflare.com.
+
+;; A Records
+autoconfig.cherypadang.id.	1	IN	A	103.247.11.218 ; cf_tags=cf-proxied:true
+cherypadang.id.	1	IN	A	103.247.11.218 ; cf_tags=cf-proxied:true
+
+;; AAAA Records
+cherypadang.id.	1	IN	AAAA	2001:df0:27b:2::a:320 ; cf_tags=cf-proxied:true
+
+;; CNAME Records
+imap.cherypadang.id.	1	IN	CNAME	m015.dmail.id. ; cf_tags=cf-proxied:false
+mail.cherypadang.id.	1	IN	CNAME	m015.dmail.id. ; cf_tags=cf-proxied:false
+smtp.cherypadang.id.	1	IN	CNAME	m015.dmail.id. ; cf_tags=cf-proxied:false
+webmail.cherypadang.id.	1	IN	CNAME	m015.webmail.dmail.id. ; cf_tags=cf-proxied:true
+www.cherypadang.id.	1	IN	CNAME	cherypadang.id. ; cf_tags=cf-proxied:true
+
+;; MX Records
+cherypadang.id.	1	IN	MX	100 m015.dmail.id.
+
+;; PTR Records
+73.226.7.103.in-addr.arpa.cherypadang.id.	1	IN	PTR	m015.dapurhosting.com.
+
+;; TXT Records
+cherypadang.id.	1	IN	TXT	"v=spf1 +mx +a +ip4:103.7.226.73 ~all" ; SPF
+default._domainkey.cherypadang.id.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3LdPST93O8pu8AzAMEZLfTVkzKVs6EosYnm1a47D+RQKmMVuezRJHzBS/96ROA1WAjbqdvmFxR4egqOIzx1yKUXYJX52ASJaAynWyi2PrTSDhn7Z6uYn+uFUWRB8cy9BQTI+gINZit+OCMwWxVGvNe+eYRYGZTzVVtlNSU2YGs8jINwQggvAtDXOTFU7IODlj" "Xvue/87WtCLRd3df6bIgQMztiWpiGx0kJs3+i2jkYwjOOizoHIoe4DaRb/8rbxDRUqwFVhTKZTvz+b0KRZSrc/njvGINZq2qLkPYrr7mbZdq4+cEs61Zcffd6vDyTCSZ7rgy8K3L5Cf1sLPhC/7AwIDAQAB;" ; DKIM
+_dmarc.cherypadang.id.	1	IN	TXT	"v=DMARC1; p=reject; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;"
