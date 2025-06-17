@@ -96,14 +96,13 @@
             </div>
 
             <div class="col-12 d-flex flex-column align-items-center">
-                <button id="submitBtn" class="g-recaptcha btn btn-light text-dark btn-lg p-3 px-5" 
-                    data-sitekey="6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0" 
-                    data-callback='onSubmit'
-                    data-action='submit'>
+                <button id="submitBtn" class="btn btn-light text-dark btn-lg p-3 px-5" type="submit">
                     Kirim
                 </button>
-
-                <small class="text-white-50 mt-3">Situs ini dilindungi oleh reCAPTCHA serta berlaku Kebijakan Privasi dan Ketentuan Layanan Google.</small>
+            
+                <small class="text-white-50 mt-3">
+                    Situs ini dilindungi oleh reCAPTCHA serta berlaku Kebijakan Privasi dan Ketentuan Layanan Google.
+                </small>
             </div>
 
         </form>
@@ -111,45 +110,46 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0"></script>
+
     <script>
         const form = document.getElementById('contactUsForm');
-        const submitButton = form.querySelector('button');
+        const submitButton = document.getElementById('submitBtn');
 
-        const phone = document.getElementById('floatingPhone').value.trim();
-
-        if (phone === '' || !/^[0-9]{8,15}$/.test(phone)) {
-            alert('Nomor telepon wajib diisi dan harus terdiri dari 8–15 digit angka.');
-            submitButton.disabled = false;
-            submitButton.innerHTML = 'Kirim';
-            return;
-        }
-
-    
         form.addEventListener('submit', function (event) {
             event.preventDefault();
-    
-            // Disable button agar tidak bisa diklik ulang
+
+            const phone = document.getElementById('floatingPhone').value.trim();
+            if (phone === '' || !/^[0-9]{8,15}$/.test(phone)) {
+                alert('Nomor telepon wajib diisi dan harus terdiri dari 8–15 digit angka.');
+                return;
+            }
+
             submitButton.disabled = true;
             submitButton.innerHTML = 'Mengirim...';
-    
-            // Siapkan data yang dikirim
-            const formData = new FormData(form);
-    
-            // Kirim ke backend (kirim.php)
-            fetch('kirim.php', {
-                method: 'POST',
-                body: formData,
-            })
-            .then(response => response.text())
-            .then(responseText => {
-                alert('Pesan berhasil dikirim.');
-                window.location.href = 'index.html';
-            })
-            .catch(error => {
-                alert('Gagal mengirim pesan.');
-                console.error(error);
-                submitButton.disabled = false;
-                submitButton.innerHTML = 'Kirim';
+
+            // Jalankan reCAPTCHA
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0', { action: 'submit' })
+                .then(function (token) {
+                    const formData = new FormData(form);
+                    formData.append('recaptcha_token', token);
+
+                    fetch('kirim.php', {
+                        method: 'POST',
+                        body: formData,
+                    })
+                    .then(response => response.text())
+                    .then(responseText => {
+                        alert('Pesan berhasil dikirim.');
+                        window.location.href = 'index.html';
+                    })
+                    .catch(error => {
+                        alert('Gagal mengirim pesan.');
+                        console.error(error);
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = 'Kirim';
+                    });
+                });
             });
         });
     </script>
