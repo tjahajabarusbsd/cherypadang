@@ -29,6 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pesan = clean($_POST['pesan'] ?? '');
     $recaptchaToken = $_POST['g-recaptcha-response'] ?? '';
 
+    $phone = htmlspecialchars($_POST['phone'] ?? '');
+
+    if (empty($phone) || !preg_match('/^[0-9]{8,15}$/', $phone)) {
+        exit("<script>alert('Nomor telepon tidak valid.'); window.history.back();</script>");
+    }
+
     // Validasi reCAPTCHA v3
     $recaptchaSecret = $_ENV['RECAPTCHA_SECRET_KEY'];
     $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecret}&response={$recaptchaToken}");
