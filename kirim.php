@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         ";
 
         $mail->send();
-        echo "<script>alert('Pesan berhasil dikirim.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Terima kasih, pesan Anda berhasil dikirim.'); window.location.href='index.html';</script>";
     } catch (Exception $e) {
         echo "<script>alert('Gagal mengirim pesan: {$mail->ErrorInfo}'); window.history.back();</script>";
     }
