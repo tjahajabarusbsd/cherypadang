@@ -18,8 +18,6 @@
             background-position: center;
             /* make the background darker but not the text */
             backdrop-filter: opacity(0.2);
-
-
         }
 
         .judul {
@@ -50,7 +48,7 @@
 
 </head>
 
-<body class="container-fluid bg-dark vw-100 vh-100">
+<body class="container-fluid bg-dark p-0 vh-100">
     <div class="cover d-flex flex-column justify-content-between align-items-center h-50 p-5"> 
         <h1 class="judul text-light text-center">CHERY THETA AUTO</h1>
     
@@ -62,7 +60,7 @@
     <div class="container">
         <h1 class="subjudul fs-3 text-light text-center pt-3 pb-2">Hubungi Kami</h1>
 
-        <form id="contactUsForm" class="bg-dark p-5 pt-0">
+        <form id="contactUsForm" class="bg-dark p-5 pt-0" action="kirim.php" method="POST">
             <div class="form-floating mb-3">
                 <input type="nama" class="form-control" name="nama" id="floatingNama" placeholder="Nama">
 
@@ -92,37 +90,28 @@
             </div>
 
             <div class="col-12 d-flex flex-column align-items-center">
-                <button class="g-recaptcha btn btn-light text-dark btn-lg p-3 px-5" data-sitekey="6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0" data-callback='onSubmit'
-                data-action='submit'>Kirim</button>
+                <button id="submitBtn" class="g-recaptcha btn btn-light text-dark btn-lg p-3 px-5" 
+                    data-sitekey="6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0" 
+                    data-callback='onSubmit'
+                    data-action='submit'>
+                    Kirim
+                </button>
 
                 <small class="text-white-50 mt-3">Situs ini dilindungi oleh reCAPTCHA serta berlaku Kebijakan Privasi dan Ketentuan Layanan Google.</small>
             </div>
-
-            
 
         </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0"></script>
     <script>
-        const form = document.getElementById('contactUsForm');
-
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const data = {
-                'nama' : document.getElementById('floatingNama').value,
-                'email' : document.getElementById('floatingInput').value,
-                'pesan' : document.getElementById('floatingTextarea').value,
-                'minat' : document.getElementById('floatingSelect').value,
-            }
-
-            console.log(data);
-        });
-
         function onSubmit(token) {
-            form.submit();
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+            btn.innerHTML = 'Mengirim...';
+        
+            document.getElementById("contactUsForm").submit();
         }
     </script>
 </body>
