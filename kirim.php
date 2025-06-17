@@ -23,6 +23,7 @@ function clean($str) {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Tangkap data dan sanitasi
     $nama  = clean($_POST['nama'] ?? '');
+    $phone = clean($_POST['phone'] ?? '');
     $email = clean($_POST['email'] ?? '');
     $minat = clean($_POST['minat'] ?? '');
     $pesan = clean($_POST['pesan'] ?? '');
@@ -57,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->Subject = "Pesan Baru dari Website Chery Padang";
         $mail->Body    = "
             <strong>Nama:</strong> $nama<br>
+            <strong>Telepon:</strong> $phone<br>
             <strong>Email:</strong> $email<br>
             <strong>Minat:</strong> $minat<br>
             <strong>Pesan:</strong><br>$pesan
