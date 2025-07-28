@@ -62,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } elseif ($tipe_form === 'testdrive') {
         $tanggal = clean($_POST['tanggal_testdrive'] ?? '');
         $model   = clean($_POST['model'] ?? '');
-        $pesan   = clean($_POST['pesan'] ?? '');
 
         $subject = "Permintaan Test Drive Baru - Chery Padang";
         $body = "
@@ -72,7 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <strong>Email:</strong> $email<br>
             <strong>Model Chery:</strong> $model<br>
             <strong>Tanggal Test Drive:</strong> $tanggal<br>
-            <strong>Pesan Tambahan:</strong><br>$pesan
         ";
     } else {
         exit("<script>alert('Form tidak dikenali.'); window.history.back();</script>");
