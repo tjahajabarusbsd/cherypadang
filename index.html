@@ -171,8 +171,15 @@
                     </div>
 
                     <div class="col-12 d-flex flex-column align-items-center">
-                        <button class="btn btn-light text-dark btn-lg p-3 px-5" type="submit">Ajukan Test Drive</button>
-                        <small class="text-white-50 mt-3">Kami akan menghubungi Anda untuk konfirmasi.</small>
+                        <button id="submitBtn" class="g-recaptcha btn btn-light text-dark btn-lg p-3 px-5"
+                            data-sitekey="6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0" data-callback='onSubmit'
+                            data-action='submit'>
+                            Ajukan Test Drive
+                        </button>
+                        <small class="text-white-50 mt-3">
+                            Situs ini dilindungi oleh reCAPTCHA serta berlaku Kebijakan Privasi dan Ketentuan Layanan
+                            Google.
+                        </small>
                     </div>
                 </form>
             </div>
