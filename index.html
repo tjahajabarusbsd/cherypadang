@@ -171,7 +171,7 @@
                     </div>
 
                     <div class="col-12 d-flex flex-column align-items-center">
-                        <button id="submitBtn" class="g-recaptcha btn btn-light text-dark btn-lg p-3 px-5"
+                        <button id="submitTestDriveBtn" class="g-recaptcha btn btn-light text-dark btn-lg p-3 px-5"
                             data-sitekey="6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0" data-callback='onSubmit'
                             data-action='submit'>
                             Ajukan Test Drive
@@ -197,6 +197,14 @@
             btn.innerHTML = 'Mengirim...';
 
             document.getElementById("contactUsForm").submit();
+        }
+
+        function onSubmitTestDrive(token) {
+            const btn = document.getElementById('submitTestDriveBtn');
+            btn.disabled = true;
+            btn.innerHTML = 'Mengirim...';
+
+            document.getElementById("testDriveForm").submit();
         }
     </script>
 </body>
