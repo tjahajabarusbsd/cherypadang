@@ -15,7 +15,8 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 // Fungsi sanitasi
-function clean($str) {
+function clean($str)
+{
     return htmlspecialchars(strip_tags(trim($str)));
 }
 
@@ -71,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         ";
 
         $mail->send();
-        echo "<script>alert('Terima kasih, pesan Anda berhasil dikirim.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Terima kasih, pesan Anda berhasil dikirim.'); window.location.href='/';</script>";
     } catch (Exception $e) {
         echo "<script>alert('Gagal mengirim pesan: {$mail->ErrorInfo}'); window.history.back();</script>";
     }
