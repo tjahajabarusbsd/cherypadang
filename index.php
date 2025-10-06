@@ -1,5 +1,9 @@
+<?php
+$random = '?_x=' . date('YMD'); 
+?>
+
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="id">
 
 <head>
 	<meta charset="UTF-8">
@@ -83,7 +87,7 @@
 							<li class="active"><a href="./index.html">Home</a></li>
 							<li><a href="#targetProduk">Omoda</a></li>
 							<li><a href="#targetProduk">Tiggo</a></li>
-							<li><a href="#targetTestDrive">Test Drive</a></li>
+							<li><a href="#targetContact">Test Drive</a></li>
 							<li><a href="#targetContact">Contact</a></li>
 						</ul>
 					</nav>
@@ -117,63 +121,68 @@
 	<section id="targetHome" class="categories">
 		<div class="container-fluid">
 			<div class="row">
+				<div class="col-lg-12 pr-0">
+					<div class="categories__item categories__large__item set-bg"
+						data-setbg="img/categories/banner_2025_09.jpg<?= $random ?>">
+					</div>
+				</div>
 				<div class="col-lg-6 pr-0">
 					<div class="categories__item categories__large__item set-bg"
-						data-setbg="img/categories/category-1a.jpg">
+						data-setbg="img/categories/category-1a.jpg<?= $random ?>">
 						<div class="categories__text">
 							<h1>Omoda</h1>
-							<a href="#">Hubungi</a>
+							<a href="#formContact">Hubungi</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 pl-0">
-					<div class="categories__item categories__large__item2 set-bg"
-						data-setbg="img/categories/category-2b.jpg">
+				<div class="col-lg-6 pl-0 pr-0">
+					<div class="categories__item categories__large__item2 set-bg" 
+						data-setbg="img/categories/category-2b.jpg<?= $random ?>">
 						<div class="categories__text text-right">
 							<h1>Tiggo</h1>
-							<a href="#">Hubungi</a>
+							<a href="#formContact">Hubungi</a>
 						</div>
 					</div>
-
-					<!-- <div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-							<div class="categories__item set-bg" data-setbg="img/categories/category-2.jpg">
-								<div class="categories__text">
-									<h4>Men’s fashion</h4>
-									<p>358 items</p>
-									<a href="#">Shop now</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-							<div class="categories__item set-bg" data-setbg="img/categories/category-3.jpg">
-								<div class="categories__text">
-									<h4>Kid’s fashion</h4>
-									<p>273 items</p>
-									<a href="#">Shop now</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-							<div class="categories__item set-bg" data-setbg="img/categories/category-4.jpg">
-								<div class="categories__text">
-									<h4>Cosmetics</h4>
-									<p>159 items</p>
-									<a href="#">Shop now</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-							<div class="categories__item set-bg" data-setbg="img/categories/category-5.jpg">
-								<div class="categories__text">
-									<h4>Accessories</h4>
-									<p>792 items</p>
-									<a href="#">Shop now</a>
-								</div>
-							</div>
-						</div>
-					</div> -->
 				</div>
+
+				<!-- <div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
+						<div class="categories__item set-bg" data-setbg="img/categories/category-2.jpg">
+							<div class="categories__text">
+								<h4>Men’s fashion</h4>
+								<p>358 items</p>
+								<a href="#">Shop now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
+						<div class="categories__item set-bg" data-setbg="img/categories/category-3.jpg">
+							<div class="categories__text">
+								<h4>Kid’s fashion</h4>
+								<p>273 items</p>
+								<a href="#">Shop now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
+						<div class="categories__item set-bg" data-setbg="img/categories/category-4.jpg">
+							<div class="categories__text">
+								<h4>Cosmetics</h4>
+								<p>159 items</p>
+								<a href="#">Shop now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
+						<div class="categories__item set-bg" data-setbg="img/categories/category-5.jpg">
+							<div class="categories__text">
+								<h4>Accessories</h4>
+								<p>792 items</p>
+								<a href="#">Shop now</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -210,12 +219,36 @@
 						'model' => 'omoda',
 						'name' => 'Chery C5',
 						'img' => 'img/product/omoda/chery_c5/front.jpg',
-						'label' => 'new',
-						'harga' => 'Dari Rp 340 JT',
+						'label' => '',
+						'harga' => 'Dari Rp 355 - 390,8 JT',
 						'detail' => [
 							'interior' => ['img/product/omoda/chery_c5/interior/1.png', 'img/product/omoda/chery_c5/interior/2.png', 'img/product/omoda/chery_c5/interior/3.png'],
 							'exterior' => ['img/product/omoda/chery_c5/exterior/1.png', 'img/product/omoda/chery_c5/exterior/2.png', 'img/product/omoda/chery_c5/exterior/3.png'],
 							'features' => ['img/product/omoda/chery_c5/features/1.png', 'img/product/omoda/chery_c5/features/2.png', 'img/product/omoda/chery_c5/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+								'CC 1.5 Turbo',
+								'RZ FWD',
+								'Z FWD',
+								'Torsi mesin 230 Nm',
+								'Power mesin 147 Ps'
+							],
+							'safety' => [
+								'Camera 360',
+								'airbag 6',
+								'Driving Assistants 10',
+								'ADAS 10',
+							],
+							'comfort' => [
+								'Kursi 2 baris',
+								'Ban 215/55 R18',
+								'Speaker 8 (RZ)',
+								'Speaker 6 (Z)',
+								'Wireless Charger 15W',
+								'Sunroof (E5 FWD)',
+								'Bagasi Electric (RZ)'
+							]
 						]
 					],
 					[
@@ -223,12 +256,39 @@
 						'model' => 'omoda',
 						'name' => 'Chery E5',
 						'img' => 'img/product/omoda/chery_e5/front.jpg',
-						'label' => 'Electric',
-						'harga' => 'Dari Rp 425 JT',
+						'label' => 'Electric - New',
+						'harga' => 'Dari Rp 439.8 / 444.8 JT',
 						'detail' => [
 							'interior' => ['img/product/omoda/chery_e5/interior/1.png', 'img/product/omoda/chery_e5/interior/2.png', 'img/product/omoda/chery_e5/interior/3.png'],
 							'exterior' => ['img/product/omoda/chery_e5/exterior/1.png', 'img/product/omoda/chery_e5/exterior/2.png', 'img/product/omoda/chery_e5/exterior/3.png'],
 							'features' => ['img/product/omoda/chery_e5/features/1.png', 'img/product/omoda/chery_e5/features/2.png', 'img/product/omoda/chery_e5/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+								'Full Listrik (EV)',
+								'E5 FWD',
+								'E5 Pure FWD',
+								'Torsi Battery 340 Nm',
+								'Power Battery 203 Ps',
+								'Range Full Battery 430 Km WLTP',
+								'Kapasitas Battery 61.05 kWh',
+							],
+							'safety' => [
+								'Camera 540 (E5 FWD)',
+								'airbag 6',
+								'Driving Assistants 10',
+								'ADAS 17',
+								'V2L'
+							],
+							'comfort' => [
+								'Kursi 2 baris',
+								'Ban 215/55 R18',
+								'Speaker 8 (E5 FWD)',
+								'Speaker 6 (Pure)',
+								'Wireless Charger 15W',
+								'Sunroof (E5 FWD)',
+								'Bagasi Electric (E5 FWD)'
+							]
 						]
 					],
 					[
@@ -236,13 +296,42 @@
 						'model' => 'omoda',
 						'name' => 'Chery J6',
 						'img' => 'img/product/omoda/chery_j6/front.jpg',
-						'label' => '',
-						'harga' => 'Dari Rp 530 JT',
+						'label' => 'new',
+						'harga' => 'Dari Rp 535.8 / 595.8 JT',
 						'detail' => [
 							'interior' => ['img/product/omoda/chery_j6/interior/1.png', 'img/product/omoda/chery_j6/interior/2.png', 'img/product/omoda/chery_j6/interior/3.png'],
 							'exterior' => ['img/product/omoda/chery_j6/exterior/1.png', 'img/product/omoda/chery_j6/exterior/2.png', 'img/product/omoda/chery_j6/exterior/3.png'],
 							'features' => ['img/product/omoda/chery_j6/features/1.png', 'img/product/omoda/chery_j6/features/2.png', 'img/product/omoda/chery_j6/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+								'Full Listrik (EV)',
+								'IWD',
+								'RWD',
+								'Torsi 385 Nm / Power 279 PS (IWD)',
+								'Torsi 220 Nm / Power 184 PS (RWD)',
+								'Range Full Battery 418 Km (IWD)',
+								'Range Full Battery 426 Km (RWD)',
+							],
+							'safety' => [
+								'Camera 540',
+								'airbag 6',
+								'Driving Assistants 14',
+								'ADAS 14',
+								'V2L'
+							],
+							'comfort' => [
+								'Kursi 2 baris',
+								'Ban 225/55 R19 (IWD)',
+								'Ban 225/60 R18 (RWD)',
+								'Speaker 12 (IWD)',
+								'Speaker 8 (RWD)',
+								'Wireless Charger 50W',
+								'Panoramic Sunroof',
+								'AC Dual Zone PM2.5 Filter'
+							]
 						]
+
 					],
 					[
 						'id' => 4,
@@ -250,24 +339,60 @@
 						'name' => 'Chery 5 GT',
 						'img' => 'img/product/omoda/omoda_5_gt/front.jpg',
 						'label' => '',
-						'harga' => 'Dari Rp 453 JT',
+						'harga' => 'Dari Rp 4XX JT',
 						'detail' => [
 							'interior' => ['img/product/omoda/omoda_5_gt/interior/1.png', 'img/product/omoda/omoda_5_gt/interior/2.png', 'img/product/omoda/omoda_5_gt/interior/3.png'],
 							'exterior' => ['img/product/omoda/omoda_5_gt/exterior/1.png', 'img/product/omoda/omoda_5_gt/exterior/2.png', 'img/product/omoda/omoda_5_gt/exterior/3.png'],
 							'features' => ['img/product/omoda/omoda_5_gt/features/1.png', 'img/product/omoda/omoda_5_gt/features/2.png', 'img/product/omoda/omoda_5_gt/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+							],
+							'safety' => [
+							],
+							'comfort' => [
+							]
 						]
+
 					],
 					[
 						'id' => 5,
 						'model' => 'tiggo',
 						'name' => 'Tiggo 8 CSH',
 						'img' => 'img/product/tiggo/tiggo_8_csh/front.jpg',
-						'label' => 'new',
-						'harga' => 'Dari Rp 540 JT',
+						'label' => '',
+						'harga' => 'Dari Rp 549.8 JT',
 						'detail' => [
 							'interior' => ['img/product/tiggo/tiggo_8_csh/interior/1.png', 'img/product/tiggo/tiggo_8_csh/interior/2.png', 'img/product/tiggo/tiggo_8_csh/interior/3.png'],
 							'exterior' => ['img/product/tiggo/tiggo_8_csh/exterior/1.png', 'img/product/tiggo/tiggo_8_csh/exterior/2.png', 'img/product/tiggo/tiggo_8_csh/exterior/3.png'],
 							'features' => ['img/product/tiggo/tiggo_8_csh/features/1.png', 'img/product/tiggo/tiggo_8_csh/features/2.png', 'img/product/tiggo/tiggo_8_csh/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+								'CC 1.5 Turbo PHEV',
+								'FWD',
+								'Torsi Mesin 215 Nm',
+								'Power Mesin 143 Ps',
+								'Torsi Battery 310 Nm',
+								'Power Battery 204 Ps',
+								'Range Full Hybrid Mode 1300 Km',
+								'Pure EV Mode 90 Km',
+								'V2L',
+							],
+							'safety' => [
+								'Camera 540',
+								'airbag 10',
+								'Driving Assistants 11',
+								'ADAS 14',
+							],
+							'comfort' => [
+								'Kursi 3 baris',
+								'Ban 235/50 R19',
+								'Speaker 12',
+								'Wireless Charger 50W',
+								'Panoramic Sunroof',
+								'AC Dual Zone AQS PM2.5/N95 Air Filter'
+							]
 						]
 					],
 					[
@@ -276,11 +401,33 @@
 						'name' => 'Tiggo 8',
 						'img' => 'img/product/tiggo/tiggo_8/front.jpg',
 						'label' => '',
-						'harga' => 'Dari Rp 400 JT',
+						'harga' => 'Dari Rp 399.8 / 440.8 JT',
 						'detail' => [
 							'interior' => ['img/product/tiggo/tiggo_8/interior/1.png', 'img/product/tiggo/tiggo_8/interior/2.png', 'img/product/tiggo/tiggo_8/interior/3.png'],
 							'exterior' => ['img/product/tiggo/tiggo_8/exterior/1.png', 'img/product/tiggo/tiggo_8/exterior/2.png', 'img/product/tiggo/tiggo_8/exterior/3.png'],
 							'features' => ['img/product/tiggo/tiggo_8/features/1.png', 'img/product/tiggo/tiggo_8/features/2.png', 'img/product/tiggo/tiggo_8/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+								'CC 1.6 Turbo',
+								'Premium FWD',
+								'Comfort FWD',
+								'Torsi Mesin 290 Nm',
+								'Power Mesin 186 Ps',
+							],
+							'safety' => [
+								'Camera 360',
+								'airbag 6',
+								'Driving Assistants 10',
+								'ADAS 9 (Premium)',
+							],
+							'comfort' => [
+								'Kursi 3 baris',
+								'Ban 235/55 R18',
+								'Speaker 8',
+								'Panoramic Sunroof (Premium)',
+								'AC Dual Zone N95 Air Filter'
+							]
 						]
 					],
 					[
@@ -289,11 +436,37 @@
 						'name' => 'Tiggo 8 Pro Max',
 						'img' => 'img/product/tiggo/tiggo_8_pro_max/front.jpg',
 						'label' => '',
-						'harga' => 'Dari Rp 600 JT',
+						'harga' => 'Dari Rp 598.8 JT',
 						'detail' => [
 							'interior' => ['img/product/tiggo/tiggo_8_pro_max/interior/1.png', 'img/product/tiggo/tiggo_8_pro_max/interior/2.png', 'img/product/tiggo/tiggo_8_pro_max/interior/3.png'],
 							'exterior' => ['img/product/tiggo/tiggo_8_pro_max/exterior/1.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/2.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/3.png'],
 							'features' => ['img/product/tiggo/tiggo_8_pro_max/features/1.png', 'img/product/tiggo/tiggo_8_pro_max/features/2.png', 'img/product/tiggo/tiggo_8_pro_max/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+								'CC 2.0 Turbo',
+								'AWD',
+								'FWD',
+								'Torsi Mesin 390 Nm',
+								'Power Mesin 254 Ps',
+							],
+							'safety' => [
+								'Camera 360',
+								'airbag 10 (AWD)',
+								'airbag 9 (FWD)',
+								'Driving Assistants 11 (AWD)',
+								'Driving Assistants 10 (FWD)',
+								'ADAS 12',
+							],
+							'comfort' => [
+								'Kursi 3 baris',
+								'Ban 235/50 R19',
+								'Speaker 10 (AWD)',
+								'Speaker 8 (FWD)',
+								'Wireless Charger 50W',
+								'Panoramic Sunroof',
+								'AC Dual Zone N95 Air Filter'
+							]
 						]
 					],
 					[
@@ -302,11 +475,35 @@
 						'name' => 'Tiggo Cross',
 						'img' => 'img/product/tiggo/tiggo_cross/front.jpg',
 						'label' => 'value',
-						'harga' => 'Dari Rp 270 JT',
+						'harga' => 'Dari Rp 299.9 / 309.8 JT',
 						'detail' => [
 							'interior' => ['img/product/tiggo/tiggo_cross/interior/1.png', 'img/product/tiggo/tiggo_cross/interior/2.png', 'img/product/tiggo/tiggo_cross/interior/3.png'],
 							'exterior' => ['img/product/tiggo/tiggo_cross/exterior/1.png', 'img/product/tiggo/tiggo_cross/exterior/2.png', 'img/product/tiggo/tiggo_cross/exterior/3.png'],
 							'features' => ['img/product/tiggo/tiggo_cross/features/1.png', 'img/product/tiggo/tiggo_cross/features/2.png', 'img/product/tiggo/tiggo_cross/features/3.png'],
+						],
+						'spesifikasi' => [
+							'performance' => [
+								'CC 1.5',
+								'Premium FWD',
+								'Comfort FWD',
+								'Torsi Mesin 138 Nm',
+								'Power Mesin 116 Ps',
+							],
+							'safety' => [
+								'Camera 360',
+								'airbag 6 (Premium)',
+								'airbag 4 (Comfort)',
+								'Driving Assistants 9',
+								'ADAS 15',
+							],
+							'comfort' => [
+								'Kursi 2 baris',
+								'Ban 215/60 R17 (Premium)',
+								'Ban 215/65 R16 (Comfort)',
+								'Speaker 6 (Premium)',
+								'Speaker 4 (Comfort)',
+								'Sunroof (Premium)',
+							]
 						]
 					],
 
@@ -323,8 +520,8 @@
 								<ul class="product__hover">
 									<li><a href="<?= $product['img']; ?>" class="image-popup"><span
 												class="arrow_expand"></span></a></li>
-									<li><a href="#"><span class="icon_heart_alt"></span></a></li>
-									<li><a href="#"><span class="icon_bag_alt"></span></a></li>
+									<!-- <li><a href="#"><span class="icon_heart_alt"></span></a></li> -->
+									<li><a href="javascript:void(0)" class='spesifikasiTrigger' data-id='<?= $product['id']; ?>'><span class="icon_zoom-in_alt"></span></a></li>
 								</ul>
 							</div>
 							<div class="product__item__text">
@@ -350,7 +547,7 @@
 	<!-- Product Section End -->
 
 	<!-- Banner Section Begin -->
-	<section class="banner set-bg" data-setbg="img/banner/banner-1.png">
+	<section id="targetProduct" class="banner set-bg" data-setbg="img/banner/banner-1.png">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-7 col-lg-8 m-auto">
@@ -524,7 +721,7 @@
 					<div class="instagram__item set-bg" data-setbg="img/instagram/insta-1.jpg">
 						<div class="instagram__text">
 							<i class="fa fa-instagram"></i>
-							<a href="#">@ chery_padang</a>
+							<a href="https://www.instagram.com/cherythetapadang/">@ cherythetapadang</a>
 						</div>
 					</div>
 				</div>
@@ -532,7 +729,7 @@
 					<div class="instagram__item set-bg" data-setbg="img/instagram/insta-2.jpg">
 						<div class="instagram__text">
 							<i class="fa fa-instagram"></i>
-							<a href="#">@ chery_padang</a>
+							<a href="https://www.instagram.com/cherythetapadang/">@ cherythetapadang</a>
 						</div>
 					</div>
 				</div>
@@ -540,7 +737,7 @@
 					<div class="instagram__item set-bg" data-setbg="img/instagram/insta-3.jpg">
 						<div class="instagram__text">
 							<i class="fa fa-instagram"></i>
-							<a href="#">@ chery_padang</a>
+							<a href="https://www.instagram.com/cherythetapadang/">@ cherythetapadang</a>
 						</div>
 					</div>
 				</div>
@@ -548,7 +745,7 @@
 					<div class="instagram__item set-bg" data-setbg="img/instagram/insta-4.jpg">
 						<div class="instagram__text">
 							<i class="fa fa-instagram"></i>
-							<a href="#">@ chery_padang</a>
+							<a href="https://www.instagram.com/cherythetapadang/">@ cherythetapadang</a>
 						</div>
 					</div>
 				</div>
@@ -556,7 +753,7 @@
 					<div class="instagram__item set-bg" data-setbg="img/instagram/insta-5.jpg">
 						<div class="instagram__text">
 							<i class="fa fa-instagram"></i>
-							<a href="#">@ chery_padang</a>
+							<a href="https://www.instagram.com/cherythetapadang/">@ cherythetapadang</a>
 						</div>
 					</div>
 				</div>
@@ -564,7 +761,7 @@
 					<div class="instagram__item set-bg" data-setbg="img/instagram/insta-6.jpg">
 						<div class="instagram__text">
 							<i class="fa fa-instagram"></i>
-							<a href="#">@ chery_padang</a>
+							<a href="https://www.instagram.com/cherythetapadang/">@ cherythetapadang</a>
 						</div>
 					</div>
 				</div>
@@ -584,52 +781,62 @@
 						</div>
 						<p>Chery Padang. Jalan Hayamwuruk.</p>
 						<div class="footer__payment">
-							<a href="#"><img src="img/payment/payment-1.png" alt=""></a>
-							<a href="#"><img src="img/payment/payment-2.png" alt=""></a>
-							<a href="#"><img src="img/payment/payment-3.png" alt=""></a>
-							<a href="#"><img src="img/payment/payment-4.png" alt=""></a>
-							<a href="#"><img src="img/payment/payment-5.png" alt=""></a>
+							<a href="https://www.instagram.com/cherythetapadang/" target="_blank"><img width="40px" src="img/sosmed/instagram.png" alt=""></a>
+							<a href="https://www.tiktok.com/@cherythetapadang" target="_blank"><img width="40px" src="img/sosmed/tiktok.png" alt=""></a>
+							<a href="https://wa.me/6285205200021" target="_blank"><img width="40px" src="img/sosmed/whatsapp.png" alt=""></a>
+							<!-- <a href="https://wa.me/62812368688" target="_blank"><img width="40px" src="img/sosmed/whatsapp.png" alt=""></a> -->
+							<a href="#" target="_blank"><img width="40px" src="img/sosmed/facebook.png" alt=""></a>
+							<a href="#" target="_blank"><img width="40px" src="img/sosmed/youtube.png" alt=""></a>
 						</div>
 					</div>
 				</div>
-				<!--
+				<!-- <div class="col-lg-2 col-md-3 col-sm-5">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d997.3151762090563!2d100.35520264031959!3d-0.9579295041554813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1754109482607!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div> -->
 				<div class="col-lg-2 col-md-3 col-sm-5">
 					<div class="footer__widget">
-						<h6>Quick links</h6>
+						<h6>Navigasi</h6>
 						<ul>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Blogs</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">FAQ</a></li>
+							<li><a href="#targetHome">Home</a></li>
+							<li><a href="#targetAbout">About</a></li>
+							<li><a href="#targetContact">Contact</a></li>
+							<li><a href="#targetProduct">Product</a></li>
 						</ul>
 					</div>
 				</div>
-				-->
 				<div class="col-lg-4 col-md-4 col-sm-4">
 					<div class="footer__widget">
 						<h6>Hubungi</h6>
-						<form action="#" id="contact-form">
+						<form id="formContact">
 							<div class="row mb-1">
-								<div class="col"><input class="form-control" placeholder="Nama" type="text" name="name" id="name"></div>
+								<div class="col"><input class="form-control" placeholder="Nama" type="text" name="nama" id="nama"></div>
 							</div>
 							<div class="row mb-1">
 								<div class="col"><input class="form-control" placeholder="Nomor WhatsApp" type="tel" name="phone" id="phone"></div>
 							</div>
 							<div class="row mb-1">
-								<div class="col"><textarea class="form-control" placeholder="Pesan" name="message" id="message" row mb-1s="4"></textarea></div>
+								<div class="col">
+									<select class="form-control" name="model" id="model">
+										<option value="">Saya ingin test drive...</option>
+										<?php 
+										foreach($products as $product){
+											echo "<option value='".$product['name']."'>".$product['name']."</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="row mb-1">
+								<div class="col"><textarea class="form-control" placeholder="Tambahan, misalnya tanggal untuk test-drive, dll" name="message" id="message" row mb-1s="4"></textarea></div>
 							</div>
 							<div class="row mb-1 align-items-center justify-content-between">
-								<div class="col">
-									<div class="form-check">
-										<input type="checkbox" class="form-check-input" id="formRequestTestDrive">
-										<label class="form-check-label" for="formRequestTestDrive">Test Drive</label>
-									</div>
-								</div>			
 								<div class="col text-right"><button type="submit" class="btn btn-dark" value="Kirim">Kirim</button></div>
 							</div>
 						</form>
 					</div>
 				</div>
+				<!--
 				<div class="col-lg-4 col-md-8 col-sm-8">
 					<div class="footer__newslatter">
 						<h6>KIRIM BROSUR</h6>
@@ -646,12 +853,13 @@
 						</div>
 					</div>
 				</div>
+				-->
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					<div class="footer__copyright__text">
-						<p>Copyright &copy;
+						<p style="font-size:10px">Copyright &copy;
 							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
 							template is made with <i class="fa fa-heart" aria-hidden="true"> Colorlib</i>
 						</p>
@@ -686,13 +894,14 @@
 				</div>
 
 				<div class="modal-body">
-					<ul class="list-group list-group-flush" style="font-size: 14px; padding-top:100px">
-						<li class="list-group-item">Harga tidak mengikat atau sewaktu-waktu bisa berubah</li>
-						<li class="list-group-item">Harga dihitung berdasarkan Estimasi BBN</li>
+					<ul class="list-group list-group-flush" style="font-size: 14px; padding-top:50px; padding-bottom: 30px;">
+						<li class="list-group-item">Harga resmi akan dirilis setelah ada ketetapan nantinya.</li>
+						<li class="list-group-item">Harga dihitung berdasarkan Estimasi BBN Padang.</li>
+						<li class="list-group-item">Harga tidak mengikat atau sewaktu-waktu bisa berubah.</li>
 						<li class="list-group-item">Harga akan berubah apabila terjadi kenaikan BBN atau perubahan
-							peraturan pemerintah</li>
-						<li class="list-group-item">Selisih BBN & pajak Progresif ditanggung Pelanggan</li>
-						<li class="list-group-item">Varian Two-Tone memiliki harga yang berbeda</li>
+							peraturan pemerintah.</li>
+						<li class="list-group-item">Selisih BBN & pajak Progresif ditanggung Pelanggan.</li>
+						<li class="list-group-item">Varian Two-Tone memiliki harga yang berbeda.</li>
 					</ul>
 				</div>
 
@@ -702,9 +911,33 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade" id="spesifikasiModal" tabindex="-1">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Spesifikasi <span id="spesifikasiModalTitle"></span></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Modal end -->
 
 	<!-- Js Plugins -->
+	<script>
+		const products = JSON.parse('<?= json_encode($products); ?>');
+	</script>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
@@ -714,7 +947,8 @@
 	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdQ310rAAAAAMZfKdZen8fn6RMTBuunZaI-JWn0"></script>
+	<script src="js/main.js?<?= $random ?>"></script>
 </body>
 
 </html>
