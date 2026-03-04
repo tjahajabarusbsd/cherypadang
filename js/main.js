@@ -339,9 +339,13 @@ Created: Colorib
     --------------------- */
     $(".spesifikasiTrigger").on('click', function () {
         // const spec = JSON.parse($(this).data('spec'));
-        const id = $(this).data('id');
-        const product = products.find(product => product.id == id);
+        if (typeof products === 'undefined') {
+            console.error("Products variable is not defined.");
+            return;
+        }
 
+        const id = $(this).data('id');
+        const product = products.find(prod => prod.id == id);
         const img = product.img;
         const name = product.name;
         const specs = product.spesifikasi;

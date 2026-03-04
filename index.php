@@ -1,5 +1,364 @@
 <?php
-$random = '?_x=' . date('YMD'); 
+$random = '?_x=' . date('YMD');
+
+$models = [
+	'bev',
+	'csh',
+	'ice'
+];
+
+$products = [
+	// [
+	// 	'id' => 1,
+	// 	'model' => 'bev',
+	// 	'name' => 'Chery C5',
+	// 	'img' => 'img/product/omoda/chery_c5/front.jpg',
+	// 	'label' => '',
+	// 	'harga' => ' - Type Z Rp 365.9 JT <br> 
+	// 					- Type RZ Rp. 394.9JT <br>
+	// 					- Type RZ Two Tone Rp. 399.9 JT <br>
+	// 					- Type CS CSH Rp. 435.9 JT',
+	// 	'detail' => [
+	// 		'interior' => ['img/product/omoda/chery_c5/interior/1.png', 'img/product/omoda/chery_c5/interior/2.png', 'img/product/omoda/chery_c5/interior/3.png'],
+	// 		'exterior' => ['img/product/omoda/chery_c5/exterior/1.png', 'img/product/omoda/chery_c5/exterior/2.png', 'img/product/omoda/chery_c5/exterior/3.png'],
+	// 		'features' => ['img/product/omoda/chery_c5/features/1.png', 'img/product/omoda/chery_c5/features/2.png', 'img/product/omoda/chery_c5/features/3.png'],
+	// 	],
+	// 	'spesifikasi' => [
+	// 		'performance' => [
+	// 			'CC 1.5 Turbo',
+	// 			'RZ FWD',
+	// 			'Z FWD',
+	// 			'Torsi mesin 230 Nm',
+	// 			'Power mesin 147 Ps'
+	// 		],
+	// 		'safety' => [
+	// 			'Camera 360',
+	// 			'airbag 6',
+	// 			'Driving Assistants 10',
+	// 			'ADAS 10',
+	// 		],
+	// 		'comfort' => [
+	// 			'Kursi 2 baris',
+	// 			'Ban 215/55 R18',
+	// 			'Speaker 8 (RZ)',
+	// 			'Speaker 6 (Z)',
+	// 			'Wireless Charger 15W',
+	// 			'Sunroof (E5 FWD)',
+	// 			'Bagasi Electric (RZ)'
+	// 		]
+	// 	]
+	// ],
+	[
+		'id' => 2,
+		'model' => 'bev',
+		'name' => 'Chery E5',
+		'img' => 'img/product/omoda/chery_e5/front.jpg',
+		'label' => 'Electric - New',
+		'harga' => '- Type E5 Pure Rp. 418.8 <br> 
+						- Type Single Tone Rp. 453.8 JT <br>
+						- Type Two Tone Rp. 458.8 JT',
+		'detail' => [
+			'interior' => ['img/product/omoda/chery_e5/interior/1.png', 'img/product/omoda/chery_e5/interior/2.png', 'img/product/omoda/chery_e5/interior/3.png'],
+			'exterior' => ['img/product/omoda/chery_e5/exterior/1.png', 'img/product/omoda/chery_e5/exterior/2.png', 'img/product/omoda/chery_e5/exterior/3.png'],
+			'features' => ['img/product/omoda/chery_e5/features/1.png', 'img/product/omoda/chery_e5/features/2.png', 'img/product/omoda/chery_e5/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'Full Listrik (EV)',
+				'E5 FWD',
+				'E5 Pure FWD',
+				'Torsi Battery 340 Nm',
+				'Power Battery 203 Ps',
+				'Range Full Battery 430 Km WLTP',
+				'Kapasitas Battery 61.05 kWh',
+			],
+			'safety' => [
+				'Camera 540 (E5 FWD)',
+				'airbag 6',
+				'Driving Assistants 10',
+				'ADAS 17',
+				'V2L'
+			],
+			'comfort' => [
+				'Kursi 2 baris',
+				'Ban 215/55 R18',
+				'Speaker 8 (E5 FWD)',
+				'Speaker 6 (Pure)',
+				'Wireless Charger 15W',
+				'Sunroof (E5 FWD)',
+				'Bagasi Electric (E5 FWD)'
+			]
+		]
+	],
+	[
+		'id' => 3,
+		'model' => 'bev',
+		'name' => 'Chery J6',
+		'img' => 'img/product/omoda/chery_j6/front.jpg',
+		'label' => '',
+		'harga' => '- Type RWD Rp. 609.8 <br> 
+						- Type IWD Rp. 679.8 JT',
+		'detail' => [
+			'interior' => ['img/product/omoda/chery_j6/interior/1.png', 'img/product/omoda/chery_j6/interior/2.png', 'img/product/omoda/chery_j6/interior/3.png'],
+			'exterior' => ['img/product/omoda/chery_j6/exterior/1.png', 'img/product/omoda/chery_j6/exterior/2.png', 'img/product/omoda/chery_j6/exterior/3.png'],
+			'features' => ['img/prodct/omoda/chery_j6/features/1.png', 'img/product/omoda/chery_j6/features/2.png', 'img/product/omoda/chery_j6/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'Full Listrik (EV)',
+				'IWD',
+				'RWD',
+				'Torsi 385 Nm / Power 279 PS (IWD)',
+				'Torsi 220 Nm / Power 184 PS (RWD)',
+				'Range Full Battery 418 Km (IWD)',
+				'Range Full Battery 426 Km (RWD)',
+			],
+			'safety' => [
+				'Camera 540',
+				'airbag 6',
+				'Driving Assistants 14',
+				'ADAS 14',
+				'V2L'
+			],
+			'comfort' => [
+				'Kursi 2 baris',
+				'Ban 225/55 R19 (IWD)',
+				'Ban 225/60 R18 (RWD)',
+				'Speaker 12 (IWD)',
+				'Speaker 8 (RWD)',
+				'Wireless Charger 50W',
+				'Panoramic Sunroof',
+				'AC Dual Zone PM2.5 Filter'
+			]
+		]
+
+	],
+	[
+		'id' => 4,
+		'model' => 'csh',
+		'name' => 'Chery C5 CSH',
+		'img' => 'img/product/omoda/chery_c5_csh/front.jpg',
+		'label' => 'new',
+		'harga' => 'Dari Rp 435.9 JT',
+		'detail' => [
+			'interior' => ['img/product/omoda/chery_c5_csh/interior/1.jpg', 'img/product/omoda/chery_c5_csh/interior/2.jpg', 'img/product/omoda/chery_c5_csh/interior/3.jpg'],
+			'exterior' => ['img/product/omoda/chery_c5_csh/exterior/1.jpg', 'img/product/omoda/chery_c5_csh/exterior/2.jpg', 'img/product/omoda/chery_c5_csh/exterior/3.jpg'],
+			'features' => ['img/product/omoda/chery_c5_csh/features/1.jpg', 'img/product/omoda/chery_c5_csh/features/2.jpg', 'img/product/omoda/chery_c5_csh/features/3.jpg'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'1.5L TGDI',
+				'Transmisi DHT',
+				'Total Output 211 Hp',
+				'Total Torsi 310 Nm',
+			],
+			'safety' => [
+				'airbag 8',
+				'ADAS 14',
+			],
+			'comfort' => [
+				'Kursi 2 baris',
+				'HUD besar'
+			]
+		]
+	],
+	[
+		'id' => 5,
+		'model' => 'csh',
+		'name' => 'Tiggo 8 CSH',
+		'img' => 'img/product/tiggo/tiggo_8_csh/front.jpg',
+		'label' => '',
+		'harga' => 'Dari Rp 549.8 JT',
+		'detail' => [
+			'interior' => ['img/product/tiggo/tiggo_8_csh/interior/1.png', 'img/product/tiggo/tiggo_8_csh/interior/2.png', 'img/product/tiggo/tiggo_8_csh/interior/3.png'],
+			'exterior' => ['img/product/tiggo/tiggo_8_csh/exterior/1.png', 'img/product/tiggo/tiggo_8_csh/exterior/2.png', 'img/product/tiggo/tiggo_8_csh/exterior/3.png'],
+			'features' => ['img/product/tiggo/tiggo_8_csh/features/1.png', 'img/product/tiggo/tiggo_8_csh/features/2.png', 'img/product/tiggo/tiggo_8_csh/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'CC 1.5 Turbo PHEV',
+				'FWD',
+				'Torsi Mesin 215 Nm',
+				'Power Mesin 143 Ps',
+				'Torsi Battery 310 Nm',
+				'Power Battery 204 Ps',
+				'Range Full Hybrid Mode 1300 Km',
+				'Pure EV Mode 90 Km',
+				'V2L',
+			],
+			'safety' => [
+				'Camera 540',
+				'airbag 10',
+				'Driving Assistants 11',
+				'ADAS 14',
+			],
+			'comfort' => [
+				'Kursi 3 baris',
+				'Ban 235/50 R19',
+				'Speaker 12',
+				'Wireless Charger 50W',
+				'Panoramic Sunroof',
+				'AC Dual Zone AQS PM2.5/N95 Air Filter'
+			]
+		]
+	],
+	[
+		'id' => 6,
+		'model' => 'ice',
+		'name' => 'Tiggo 8',
+		'img' => 'img/product/tiggo/tiggo_8/front.jpg',
+		'label' => '',
+		'harga' => '- Type Comfort Rp. 409.8 <br> 
+						- Type Premium Rp. 450.8 <br> 
+						- Type Promax Rp. 598.8 JT',
+		'detail' => [
+			'interior' => ['img/product/tiggo/tiggo_8/interior/1.png', 'img/product/tiggo/tiggo_8/interior/2.png', 'img/product/tiggo/tiggo_8/interior/3.png'],
+			'exterior' => ['img/product/tiggo/tiggo_8/exterior/1.png', 'img/product/tiggo/tiggo_8/exterior/2.png', 'img/product/tiggo/tiggo_8/exterior/3.png'],
+			'features' => ['img/product/tiggo/tiggo_8/features/1.png', 'img/product/tiggo/tiggo_8/features/2.png', 'img/product/tiggo/tiggo_8/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'CC 1.6 Turbo',
+				'Premium FWD',
+				'Comfort FWD',
+				'Torsi Mesin 290 Nm',
+				'Power Mesin 186 Ps',
+			],
+			'safety' => [
+				'Camera 360',
+				'airbag 6',
+				'Driving Assistants 10',
+				'ADAS 9 (Premium)',
+			],
+			'comfort' => [
+				'Kursi 3 baris',
+				'Ban 235/55 R18',
+				'Speaker 8',
+				'Panoramic Sunroof (Premium)',
+				'AC Dual Zone N95 Air Filter'
+			]
+		]
+	],
+	[
+		'id' => 7,
+		'model' => 'ice',
+		'name' => 'Tiggo 8 Pro Max',
+		'img' => 'img/product/tiggo/tiggo_8_pro_max/front.jpg',
+		'label' => '',
+		'harga' => 'Dari Rp 598.8 JT',
+		'detail' => [
+			'interior' => ['img/product/tiggo/tiggo_8_pro_max/interior/1.png', 'img/product/tiggo/tiggo_8_pro_max/interior/2.png', 'img/product/tiggo/tiggo_8_pro_max/interior/3.png'],
+			'exterior' => ['img/product/tiggo/tiggo_8_pro_max/exterior/1.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/2.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/3.png'],
+			'features' => ['img/product/tiggo/tiggo_8_pro_max/features/1.png', 'img/product/tiggo/tiggo_8_pro_max/features/2.png', 'img/product/tiggo/tiggo_8_pro_max/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'CC 2.0 Turbo',
+				'AWD',
+				'FWD',
+				'Torsi Mesin 390 Nm',
+				'Power Mesin 254 Ps',
+			],
+			'safety' => [
+				'Camera 360',
+				'airbag 10 (AWD)',
+				'airbag 9 (FWD)',
+				'Driving Assistants 11 (AWD)',
+				'Driving Assistants 10 (FWD)',
+				'ADAS 12',
+			],
+			'comfort' => [
+				'Kursi 3 baris',
+				'Ban 235/50 R19',
+				'Speaker 10 (AWD)',
+				'Speaker 8 (FWD)',
+				'Wireless Charger 50W',
+				'Panoramic Sunroof',
+				'AC Dual Zone N95 Air Filter'
+			]
+		]
+	],
+	[
+		'id' => 8,
+		'model' => 'ice',
+		'name' => 'Tiggo Cross',
+		'img' => 'img/product/tiggo/tiggo_cross/front.jpg',
+		'label' => 'value',
+		'harga' => '- Type Comfort Rp. 289.8 <br> 
+						- Type Premium Rp. 317.8 <br> 
+						- Type Sport Rp. 335.9 JT',
+		'detail' => [
+			'interior' => ['img/product/tiggo/tiggo_cross/interior/1.png', 'img/product/tiggo/tiggo_cross/interior/2.png', 'img/product/tiggo/tiggo_cross/interior/3.png'],
+			'exterior' => ['img/product/tiggo/tiggo_cross/exterior/1.png', 'img/product/tiggo/tiggo_cross/exterior/2.png', 'img/product/tiggo/tiggo_cross/exterior/3.png'],
+			'features' => ['img/product/tiggo/tiggo_cross/features/1.png', 'img/product/tiggo/tiggo_cross/features/2.png', 'img/product/tiggo/tiggo_cross/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'CC 1.5',
+				'Premium FWD',
+				'Comfort FWD',
+				'Torsi Mesin 138 Nm',
+				'Power Mesin 116 Ps',
+			],
+			'safety' => [
+				'Camera 360',
+				'airbag 6 (Premium)',
+				'airbag 4 (Comfort)',
+				'Driving Assistants 9',
+				'ADAS 15',
+			],
+			'comfort' => [
+				'Kursi 2 baris',
+				'Ban 215/60 R17 (Premium)',
+				'Ban 215/65 R16 (Comfort)',
+				'Speaker 6 (Premium)',
+				'Speaker 4 (Comfort)',
+				'Sunroof (Premium)',
+			]
+		]
+	],
+	[
+		'id' => 9,
+		'model' => 'bev',
+		'name' => 'Chery J6T',
+		'img' => 'img/product/omoda/chery_j6t/front.png',
+		'label' => 'new',
+		'harga' => 'xxx',
+		'detail' => [
+			'interior' => ['img/product/omoda/chery_j6t/interior/1.png', 'img/product/omoda/chery_j6t/interior/2.png', 'img/product/omoda/chery_j6t/interior/3.png'],
+			'exterior' => ['img/product/omoda/chery_j6t/exterior/1.png', 'img/product/omoda/chery_j6t/exterior/2.png', 'img/product/omoda/chery_j6t/exterior/3.png'],
+			'features' => ['img/product/omoda/chery_j6t/features/1.png', 'img/product/omoda/chery_j6t/features/2.png', 'img/product/omoda/chery_j6t/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'Full Listrik (EV)',
+				'IWD',
+				'RWD',
+				'Torsi 385 Nm / Power 279 PS (IWD)',
+				'Torsi 220 Nm / Power 184 PS (RWD)',
+				'Range Full Battery 418 Km (IWD)',
+				'Range Full Battery 426 Km (RWD)',
+			],
+			'safety' => [
+				'Camera 540',
+				'airbag 6',
+				'Driving Assistants 14',
+				'ADAS 14',
+				'V2L'
+			],
+			'comfort' => [
+				'Kursi 2 baris',
+				'Ban 225/55 R19 (IWD)',
+				'Ban 225/60 R18 (RWD)',
+				'Speaker 12 (IWD)',
+				'Speaker 8 (RWD)',
+				'Wireless Charger 50W',
+				'Panoramic Sunroof',
+				'AC Dual Zone PM2.5 Filter'
+			]
+		]
+	],
+];
 ?>
 
 <!DOCTYPE html>
@@ -85,8 +444,9 @@ $random = '?_x=' . date('YMD');
 					<nav class="header__menu">
 						<ul>
 							<li class="active"><a href="./index.html">Home</a></li>
-							<li><a href="#targetProduk">Omoda</a></li>
-							<li><a href="#targetProduk">Tiggo</a></li>
+							<?php foreach ($models as $model) { ?>
+								<li><a href="#targetProduk"><?= strtoupper($model) ?></a></li>
+							<?php } ?>
 							<li><a href="#targetContact">Test Drive</a></li>
 							<li><a href="#targetContact">Contact</a></li>
 						</ul>
@@ -126,20 +486,35 @@ $random = '?_x=' . date('YMD');
 						data-setbg="img/categories/banner_2025_09.jpg<?= $random ?>">
 					</div>
 				</div>
-				<div class="col-lg-6 pr-0">
+
+				<div class="col-lg-4 pr-0">
 					<div class="categories__item categories__large__item set-bg"
 						data-setbg="img/categories/category-1a.jpg<?= $random ?>">
 						<div class="categories__text">
-							<h1>Omoda</h1>
+							<h1>BEV</h1>
+							<div>Battery <u>Electric</u> Vehicle</div>
 							<a href="#formContact">Hubungi</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 pl-0 pr-0">
-					<div class="categories__item categories__large__item2 set-bg" 
+
+				<div class="col-lg-4 pl-0 pr-0">
+					<div class="categories__item categories__large__item2 set-bg"
 						data-setbg="img/categories/category-2b.jpg<?= $random ?>">
 						<div class="categories__text text-right">
-							<h1>Tiggo</h1>
+							<h1>CSH</h1>
+							<div>Chery Super <u>Hybrid</u></div>
+							<a href="#formContact">Hubungi</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 pl-0 pr-0">
+					<div class="categories__item categories__large__item2 set-bg"
+						data-setbg="img/categories/category-1a.jpg<?= $random ?>">
+						<div class="categories__text text-right">
+							<h1>ICE</h1>
+							<div><u>Combustion</u> Engine</div>
 							<a href="#formContact">Hubungi</a>
 						</div>
 					</div>
@@ -206,309 +581,14 @@ $random = '?_x=' . date('YMD');
 				<div class="col-lg-8 col-md-8">
 					<ul class="filter__controls">
 						<li class="active" data-filter="*">Semua</li>
-						<li data-filter=".omoda">Omoda</li>
-						<li data-filter=".tiggo">Tiggo</li>
+						<?php foreach ($models as $model) { ?>
+							<li data-filter=".<?= $model; ?>"><?= strtoupper($model); ?></li>
+						<?php } ?>
 					</ul>
 				</div>
 			</div>
 			<div class="row property__gallery">
 				<?php
-				$products = [
-					[
-						'id' => 1,
-						'model' => 'omoda',
-						'name' => 'Chery C5',
-						'img' => 'img/product/omoda/chery_c5/front.jpg',
-						'label' => '',
-						'harga' => 'Dari Rp 355 - 390,8 JT',
-						'detail' => [
-							'interior' => ['img/product/omoda/chery_c5/interior/1.png', 'img/product/omoda/chery_c5/interior/2.png', 'img/product/omoda/chery_c5/interior/3.png'],
-							'exterior' => ['img/product/omoda/chery_c5/exterior/1.png', 'img/product/omoda/chery_c5/exterior/2.png', 'img/product/omoda/chery_c5/exterior/3.png'],
-							'features' => ['img/product/omoda/chery_c5/features/1.png', 'img/product/omoda/chery_c5/features/2.png', 'img/product/omoda/chery_c5/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-								'CC 1.5 Turbo',
-								'RZ FWD',
-								'Z FWD',
-								'Torsi mesin 230 Nm',
-								'Power mesin 147 Ps'
-							],
-							'safety' => [
-								'Camera 360',
-								'airbag 6',
-								'Driving Assistants 10',
-								'ADAS 10',
-							],
-							'comfort' => [
-								'Kursi 2 baris',
-								'Ban 215/55 R18',
-								'Speaker 8 (RZ)',
-								'Speaker 6 (Z)',
-								'Wireless Charger 15W',
-								'Sunroof (E5 FWD)',
-								'Bagasi Electric (RZ)'
-							]
-						]
-					],
-					[
-						'id' => 2,
-						'model' => 'omoda',
-						'name' => 'Chery E5',
-						'img' => 'img/product/omoda/chery_e5/front.jpg',
-						'label' => 'Electric - New',
-						'harga' => 'Dari Rp 439.8 / 444.8 JT',
-						'detail' => [
-							'interior' => ['img/product/omoda/chery_e5/interior/1.png', 'img/product/omoda/chery_e5/interior/2.png', 'img/product/omoda/chery_e5/interior/3.png'],
-							'exterior' => ['img/product/omoda/chery_e5/exterior/1.png', 'img/product/omoda/chery_e5/exterior/2.png', 'img/product/omoda/chery_e5/exterior/3.png'],
-							'features' => ['img/product/omoda/chery_e5/features/1.png', 'img/product/omoda/chery_e5/features/2.png', 'img/product/omoda/chery_e5/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-								'Full Listrik (EV)',
-								'E5 FWD',
-								'E5 Pure FWD',
-								'Torsi Battery 340 Nm',
-								'Power Battery 203 Ps',
-								'Range Full Battery 430 Km WLTP',
-								'Kapasitas Battery 61.05 kWh',
-							],
-							'safety' => [
-								'Camera 540 (E5 FWD)',
-								'airbag 6',
-								'Driving Assistants 10',
-								'ADAS 17',
-								'V2L'
-							],
-							'comfort' => [
-								'Kursi 2 baris',
-								'Ban 215/55 R18',
-								'Speaker 8 (E5 FWD)',
-								'Speaker 6 (Pure)',
-								'Wireless Charger 15W',
-								'Sunroof (E5 FWD)',
-								'Bagasi Electric (E5 FWD)'
-							]
-						]
-					],
-					[
-						'id' => 3,
-						'model' => 'omoda',
-						'name' => 'Chery J6',
-						'img' => 'img/product/omoda/chery_j6/front.jpg',
-						'label' => 'new',
-						'harga' => 'Dari Rp 535.8 / 595.8 JT',
-						'detail' => [
-							'interior' => ['img/product/omoda/chery_j6/interior/1.png', 'img/product/omoda/chery_j6/interior/2.png', 'img/product/omoda/chery_j6/interior/3.png'],
-							'exterior' => ['img/product/omoda/chery_j6/exterior/1.png', 'img/product/omoda/chery_j6/exterior/2.png', 'img/product/omoda/chery_j6/exterior/3.png'],
-							'features' => ['img/product/omoda/chery_j6/features/1.png', 'img/product/omoda/chery_j6/features/2.png', 'img/product/omoda/chery_j6/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-								'Full Listrik (EV)',
-								'IWD',
-								'RWD',
-								'Torsi 385 Nm / Power 279 PS (IWD)',
-								'Torsi 220 Nm / Power 184 PS (RWD)',
-								'Range Full Battery 418 Km (IWD)',
-								'Range Full Battery 426 Km (RWD)',
-							],
-							'safety' => [
-								'Camera 540',
-								'airbag 6',
-								'Driving Assistants 14',
-								'ADAS 14',
-								'V2L'
-							],
-							'comfort' => [
-								'Kursi 2 baris',
-								'Ban 225/55 R19 (IWD)',
-								'Ban 225/60 R18 (RWD)',
-								'Speaker 12 (IWD)',
-								'Speaker 8 (RWD)',
-								'Wireless Charger 50W',
-								'Panoramic Sunroof',
-								'AC Dual Zone PM2.5 Filter'
-							]
-						]
-
-					],
-					[
-						'id' => 4,
-						'model' => 'omoda',
-						'name' => 'Chery 5 GT',
-						'img' => 'img/product/omoda/omoda_5_gt/front.jpg',
-						'label' => '',
-						'harga' => 'Dari Rp 4XX JT',
-						'detail' => [
-							'interior' => ['img/product/omoda/omoda_5_gt/interior/1.png', 'img/product/omoda/omoda_5_gt/interior/2.png', 'img/product/omoda/omoda_5_gt/interior/3.png'],
-							'exterior' => ['img/product/omoda/omoda_5_gt/exterior/1.png', 'img/product/omoda/omoda_5_gt/exterior/2.png', 'img/product/omoda/omoda_5_gt/exterior/3.png'],
-							'features' => ['img/product/omoda/omoda_5_gt/features/1.png', 'img/product/omoda/omoda_5_gt/features/2.png', 'img/product/omoda/omoda_5_gt/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-							],
-							'safety' => [
-							],
-							'comfort' => [
-							]
-						]
-
-					],
-					[
-						'id' => 5,
-						'model' => 'tiggo',
-						'name' => 'Tiggo 8 CSH',
-						'img' => 'img/product/tiggo/tiggo_8_csh/front.jpg',
-						'label' => '',
-						'harga' => 'Dari Rp 549.8 JT',
-						'detail' => [
-							'interior' => ['img/product/tiggo/tiggo_8_csh/interior/1.png', 'img/product/tiggo/tiggo_8_csh/interior/2.png', 'img/product/tiggo/tiggo_8_csh/interior/3.png'],
-							'exterior' => ['img/product/tiggo/tiggo_8_csh/exterior/1.png', 'img/product/tiggo/tiggo_8_csh/exterior/2.png', 'img/product/tiggo/tiggo_8_csh/exterior/3.png'],
-							'features' => ['img/product/tiggo/tiggo_8_csh/features/1.png', 'img/product/tiggo/tiggo_8_csh/features/2.png', 'img/product/tiggo/tiggo_8_csh/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-								'CC 1.5 Turbo PHEV',
-								'FWD',
-								'Torsi Mesin 215 Nm',
-								'Power Mesin 143 Ps',
-								'Torsi Battery 310 Nm',
-								'Power Battery 204 Ps',
-								'Range Full Hybrid Mode 1300 Km',
-								'Pure EV Mode 90 Km',
-								'V2L',
-							],
-							'safety' => [
-								'Camera 540',
-								'airbag 10',
-								'Driving Assistants 11',
-								'ADAS 14',
-							],
-							'comfort' => [
-								'Kursi 3 baris',
-								'Ban 235/50 R19',
-								'Speaker 12',
-								'Wireless Charger 50W',
-								'Panoramic Sunroof',
-								'AC Dual Zone AQS PM2.5/N95 Air Filter'
-							]
-						]
-					],
-					[
-						'id' => 6,
-						'model' => 'tiggo',
-						'name' => 'Tiggo 8',
-						'img' => 'img/product/tiggo/tiggo_8/front.jpg',
-						'label' => '',
-						'harga' => 'Dari Rp 399.8 / 440.8 JT',
-						'detail' => [
-							'interior' => ['img/product/tiggo/tiggo_8/interior/1.png', 'img/product/tiggo/tiggo_8/interior/2.png', 'img/product/tiggo/tiggo_8/interior/3.png'],
-							'exterior' => ['img/product/tiggo/tiggo_8/exterior/1.png', 'img/product/tiggo/tiggo_8/exterior/2.png', 'img/product/tiggo/tiggo_8/exterior/3.png'],
-							'features' => ['img/product/tiggo/tiggo_8/features/1.png', 'img/product/tiggo/tiggo_8/features/2.png', 'img/product/tiggo/tiggo_8/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-								'CC 1.6 Turbo',
-								'Premium FWD',
-								'Comfort FWD',
-								'Torsi Mesin 290 Nm',
-								'Power Mesin 186 Ps',
-							],
-							'safety' => [
-								'Camera 360',
-								'airbag 6',
-								'Driving Assistants 10',
-								'ADAS 9 (Premium)',
-							],
-							'comfort' => [
-								'Kursi 3 baris',
-								'Ban 235/55 R18',
-								'Speaker 8',
-								'Panoramic Sunroof (Premium)',
-								'AC Dual Zone N95 Air Filter'
-							]
-						]
-					],
-					[
-						'id' => 7,
-						'model' => 'tiggo',
-						'name' => 'Tiggo 8 Pro Max',
-						'img' => 'img/product/tiggo/tiggo_8_pro_max/front.jpg',
-						'label' => '',
-						'harga' => 'Dari Rp 598.8 JT',
-						'detail' => [
-							'interior' => ['img/product/tiggo/tiggo_8_pro_max/interior/1.png', 'img/product/tiggo/tiggo_8_pro_max/interior/2.png', 'img/product/tiggo/tiggo_8_pro_max/interior/3.png'],
-							'exterior' => ['img/product/tiggo/tiggo_8_pro_max/exterior/1.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/2.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/3.png'],
-							'features' => ['img/product/tiggo/tiggo_8_pro_max/features/1.png', 'img/product/tiggo/tiggo_8_pro_max/features/2.png', 'img/product/tiggo/tiggo_8_pro_max/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-								'CC 2.0 Turbo',
-								'AWD',
-								'FWD',
-								'Torsi Mesin 390 Nm',
-								'Power Mesin 254 Ps',
-							],
-							'safety' => [
-								'Camera 360',
-								'airbag 10 (AWD)',
-								'airbag 9 (FWD)',
-								'Driving Assistants 11 (AWD)',
-								'Driving Assistants 10 (FWD)',
-								'ADAS 12',
-							],
-							'comfort' => [
-								'Kursi 3 baris',
-								'Ban 235/50 R19',
-								'Speaker 10 (AWD)',
-								'Speaker 8 (FWD)',
-								'Wireless Charger 50W',
-								'Panoramic Sunroof',
-								'AC Dual Zone N95 Air Filter'
-							]
-						]
-					],
-					[
-						'id' => 7,
-						'model' => 'tiggo',
-						'name' => 'Tiggo Cross',
-						'img' => 'img/product/tiggo/tiggo_cross/front.jpg',
-						'label' => 'value',
-						'harga' => 'Dari Rp 299.9 / 309.8 JT',
-						'detail' => [
-							'interior' => ['img/product/tiggo/tiggo_cross/interior/1.png', 'img/product/tiggo/tiggo_cross/interior/2.png', 'img/product/tiggo/tiggo_cross/interior/3.png'],
-							'exterior' => ['img/product/tiggo/tiggo_cross/exterior/1.png', 'img/product/tiggo/tiggo_cross/exterior/2.png', 'img/product/tiggo/tiggo_cross/exterior/3.png'],
-							'features' => ['img/product/tiggo/tiggo_cross/features/1.png', 'img/product/tiggo/tiggo_cross/features/2.png', 'img/product/tiggo/tiggo_cross/features/3.png'],
-						],
-						'spesifikasi' => [
-							'performance' => [
-								'CC 1.5',
-								'Premium FWD',
-								'Comfort FWD',
-								'Torsi Mesin 138 Nm',
-								'Power Mesin 116 Ps',
-							],
-							'safety' => [
-								'Camera 360',
-								'airbag 6 (Premium)',
-								'airbag 4 (Comfort)',
-								'Driving Assistants 9',
-								'ADAS 15',
-							],
-							'comfort' => [
-								'Kursi 2 baris',
-								'Ban 215/60 R17 (Premium)',
-								'Ban 215/65 R16 (Comfort)',
-								'Speaker 6 (Premium)',
-								'Speaker 4 (Comfort)',
-								'Sunroof (Premium)',
-							]
-						]
-					],
-
-				];
-
 				foreach ($products as $product) {
 					?>
 					<div class="col-lg-3 col-md-4 col-sm-6 mix <?= $product['model']; ?>">
@@ -521,7 +601,8 @@ $random = '?_x=' . date('YMD');
 									<li><a href="<?= $product['img']; ?>" class="image-popup"><span
 												class="arrow_expand"></span></a></li>
 									<!-- <li><a href="#"><span class="icon_heart_alt"></span></a></li> -->
-									<li><a href="javascript:void(0)" class='spesifikasiTrigger' data-id='<?= $product['id']; ?>'><span class="icon_zoom-in_alt"></span></a></li>
+									<li><a href="javascript:void(0)" class='spesifikasiTrigger'
+											data-id='<?= $product['id']; ?>'><span class="icon_zoom-in_alt"></span></a></li>
 								</ul>
 							</div>
 							<div class="product__item__text">
@@ -606,12 +687,12 @@ $random = '?_x=' . date('YMD');
 						</div>
 					</div>
 					<div class="row justify-content-around interior">
-						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_e5/interior/1.png"
-								alt=""></div>
+						<div class="col"><img class="img-fluid img-fade"
+								src="img/product/omoda/chery_j6t/interior/1.png" alt=""></div>
 						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_j6/interior/1.png"
 								alt=""></div>
 						<div class="col"><img class="img-fluid img-fade"
-								src="img/product/omoda/omoda_5_gt/interior/1.png" alt=""></div>
+								src="img/product/omoda/chery_c5_csh/interior/1.jpg" alt=""></div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-4 align-self-center" style="padding-right: 0;">
@@ -626,7 +707,7 @@ $random = '?_x=' . date('YMD');
 						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_j6/features/1.png"
 								alt=""></div>
 						<div class="col"><img class="img-fluid img-fade"
-								src="img/product/omoda/omoda_5_gt/features/1.png" alt=""></div>
+								src="img/product/omoda/chery_c5_csh/features/1.jpg" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -781,9 +862,12 @@ $random = '?_x=' . date('YMD');
 						</div>
 						<p>Chery Padang. Jalan Hayamwuruk.</p>
 						<div class="footer__payment">
-							<a href="https://www.instagram.com/cherythetapadang/" target="_blank"><img width="40px" src="img/sosmed/instagram.png" alt=""></a>
-							<a href="https://www.tiktok.com/@cherythetapadang" target="_blank"><img width="40px" src="img/sosmed/tiktok.png" alt=""></a>
-							<a href="https://wa.me/6285205200021" target="_blank"><img width="40px" src="img/sosmed/whatsapp.png" alt=""></a>
+							<a href="https://www.instagram.com/cherythetapadang/" target="_blank"><img width="40px"
+									src="img/sosmed/instagram.png" alt=""></a>
+							<a href="https://www.tiktok.com/@cherythetapadang" target="_blank"><img width="40px"
+									src="img/sosmed/tiktok.png" alt=""></a>
+							<a href="https://wa.me/6285205200021" target="_blank"><img width="40px"
+									src="img/sosmed/whatsapp.png" alt=""></a>
 							<!-- <a href="https://wa.me/62812368688" target="_blank"><img width="40px" src="img/sosmed/whatsapp.png" alt=""></a> -->
 							<a href="#" target="_blank"><img width="40px" src="img/sosmed/facebook.png" alt=""></a>
 							<a href="#" target="_blank"><img width="40px" src="img/sosmed/youtube.png" alt=""></a>
@@ -810,28 +894,33 @@ $random = '?_x=' . date('YMD');
 						<h6>Hubungi</h6>
 						<form id="formContact">
 							<div class="row mb-1">
-								<div class="col"><input class="form-control" placeholder="Nama" type="text" name="nama" id="nama"></div>
+								<div class="col"><input class="form-control" placeholder="Nama" type="text" name="nama"
+										id="nama"></div>
 							</div>
 							<div class="row mb-1">
-								<div class="col"><input class="form-control" placeholder="Nomor WhatsApp" type="tel" name="phone" id="phone"></div>
+								<div class="col"><input class="form-control" placeholder="Nomor WhatsApp" type="tel"
+										name="phone" id="phone"></div>
 							</div>
 							<div class="row mb-1">
 								<div class="col">
 									<select class="form-control" name="model" id="model">
 										<option value="">Saya ingin test drive...</option>
-										<?php 
-										foreach($products as $product){
-											echo "<option value='".$product['name']."'>".$product['name']."</option>";
+										<?php
+										foreach ($products as $product) {
+											echo "<option value='" . $product['name'] . "'>" . $product['name'] . "</option>";
 										}
 										?>
 									</select>
 								</div>
 							</div>
 							<div class="row mb-1">
-								<div class="col"><textarea class="form-control" placeholder="Tambahan, misalnya tanggal untuk test-drive, dll" name="message" id="message" row mb-1s="4"></textarea></div>
+								<div class="col"><textarea class="form-control"
+										placeholder="Tambahan, misalnya tanggal untuk test-drive, dll" name="message"
+										id="message" row mb-1s="4"></textarea></div>
 							</div>
 							<div class="row mb-1 align-items-center justify-content-between">
-								<div class="col text-right"><button type="submit" class="btn btn-dark" value="Kirim">Kirim</button></div>
+								<div class="col text-right"><button type="submit" class="btn btn-dark"
+										value="Kirim">Kirim</button></div>
 							</div>
 						</form>
 					</div>
@@ -894,7 +983,8 @@ $random = '?_x=' . date('YMD');
 				</div>
 
 				<div class="modal-body">
-					<ul class="list-group list-group-flush" style="font-size: 14px; padding-top:50px; padding-bottom: 30px;">
+					<ul class="list-group list-group-flush"
+						style="font-size: 14px; padding-top:50px; padding-bottom: 30px;">
 						<li class="list-group-item">Harga resmi akan dirilis setelah ada ketetapan nantinya.</li>
 						<li class="list-group-item">Harga dihitung berdasarkan Estimasi BBN Padang.</li>
 						<li class="list-group-item">Harga tidak mengikat atau sewaktu-waktu bisa berubah.</li>
@@ -935,7 +1025,7 @@ $random = '?_x=' . date('YMD');
 
 	<!-- Js Plugins -->
 	<script>
-		const products = JSON.parse('<?= json_encode($products); ?>');
+		let products = <?php echo json_encode($products); ?>;
 	</script>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
