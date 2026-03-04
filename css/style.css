@@ -31,6 +31,10 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+:root {
+	--carousel-banner-height: 700px;
+}
+
 html,
 body {
 	height: 100%;
@@ -582,6 +586,38 @@ ol {
 
 .banner__slider.owl-carousel .owl-dots button:last-child {
 	margin-right: 0;
+}
+
+#carouselBanner {
+	padding: 0;
+	height: var(--carousel-banner-height) !important;
+	overflow: hidden;
+}
+
+#carouselBanner.banner__slider {
+	padding: 0;
+}
+
+#carouselBanner .banner__item {
+	height: var(--carousel-banner-height);
+	overflow: hidden;
+}
+
+#carouselBanner .banner__item img {
+	width: 100%;
+	height: var(--carousel-banner-height);
+	object-fit: cover;
+}
+
+#carouselBanner .owl-dots {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.img-fade {
+	transition: opacity 1s ease-in-out;
 }
 
 /*---------------------

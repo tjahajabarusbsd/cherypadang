@@ -1,6 +1,9 @@
 <?php
 $random = '?_x=' . date('YMD');
 
+// scan folder img/carousel and all the file into $carouselImg
+$carouselImg = glob('img/carousel/*.{jpg,jpeg,png}', GLOB_BRACE);
+
 $models = [
 	'bev',
 	'csh',
@@ -8,53 +11,53 @@ $models = [
 ];
 
 $products = [
-	// [
-	// 	'id' => 1,
-	// 	'model' => 'bev',
-	// 	'name' => 'Chery C5',
-	// 	'img' => 'img/product/omoda/chery_c5/front.jpg',
-	// 	'label' => '',
-	// 	'harga' => ' - Type Z Rp 365.9 JT <br> 
-	// 					- Type RZ Rp. 394.9JT <br>
-	// 					- Type RZ Two Tone Rp. 399.9 JT <br>
-	// 					- Type CS CSH Rp. 435.9 JT',
-	// 	'detail' => [
-	// 		'interior' => ['img/product/omoda/chery_c5/interior/1.png', 'img/product/omoda/chery_c5/interior/2.png', 'img/product/omoda/chery_c5/interior/3.png'],
-	// 		'exterior' => ['img/product/omoda/chery_c5/exterior/1.png', 'img/product/omoda/chery_c5/exterior/2.png', 'img/product/omoda/chery_c5/exterior/3.png'],
-	// 		'features' => ['img/product/omoda/chery_c5/features/1.png', 'img/product/omoda/chery_c5/features/2.png', 'img/product/omoda/chery_c5/features/3.png'],
-	// 	],
-	// 	'spesifikasi' => [
-	// 		'performance' => [
-	// 			'CC 1.5 Turbo',
-	// 			'RZ FWD',
-	// 			'Z FWD',
-	// 			'Torsi mesin 230 Nm',
-	// 			'Power mesin 147 Ps'
-	// 		],
-	// 		'safety' => [
-	// 			'Camera 360',
-	// 			'airbag 6',
-	// 			'Driving Assistants 10',
-	// 			'ADAS 10',
-	// 		],
-	// 		'comfort' => [
-	// 			'Kursi 2 baris',
-	// 			'Ban 215/55 R18',
-	// 			'Speaker 8 (RZ)',
-	// 			'Speaker 6 (Z)',
-	// 			'Wireless Charger 15W',
-	// 			'Sunroof (E5 FWD)',
-	// 			'Bagasi Electric (RZ)'
-	// 		]
-	// 	]
-	// ],
+	[
+		'id' => 1,
+		'model' => 'ice',
+		'name' => 'Chery C5',
+		'img' => 'img/product/omoda/chery_c5/front.jpg',
+		'label' => '',
+		'harga' => ' - Type Z Rp 365.9 JT <br> 
+						- Type RZ Rp. 394.9JT <br>
+						- Type RZ Two Tone Rp. 399.9 JT <br>
+						- Type CS CSH Rp. 435.9 JT',
+		'detail' => [
+			'interior' => ['img/product/omoda/chery_c5/interior/1.png', 'img/product/omoda/chery_c5/interior/2.png', 'img/product/omoda/chery_c5/interior/3.png'],
+			'exterior' => ['img/product/omoda/chery_c5/exterior/1.png', 'img/product/omoda/chery_c5/exterior/2.png', 'img/product/omoda/chery_c5/exterior/3.png'],
+			'features' => ['img/product/omoda/chery_c5/features/1.png', 'img/product/omoda/chery_c5/features/2.png', 'img/product/omoda/chery_c5/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'CC 1.5 Turbo',
+				'RZ FWD',
+				'Z FWD',
+				'Torsi mesin 230 Nm',
+				'Power mesin 147 Ps'
+			],
+			'safety' => [
+				'Camera 360',
+				'airbag 6',
+				'Driving Assistants 10',
+				'ADAS 10',
+			],
+			'comfort' => [
+				'Kursi 2 baris',
+				'Ban 215/55 R18',
+				'Speaker 8 (RZ)',
+				'Speaker 6 (Z)',
+				'Wireless Charger 15W',
+				'Sunroof (E5 FWD)',
+				'Bagasi Electric (RZ)'
+			]
+		]
+	],
 	[
 		'id' => 2,
 		'model' => 'bev',
 		'name' => 'Chery E5',
 		'img' => 'img/product/omoda/chery_e5/front.jpg',
 		'label' => 'Electric - New',
-		'harga' => '- Type E5 Pure Rp. 418.8 <br> 
+		'harga' => '- Type E5 Pure Rp. 418.8 JT<br> 
 						- Type Single Tone Rp. 453.8 JT <br>
 						- Type Two Tone Rp. 458.8 JT',
 		'detail' => [
@@ -96,8 +99,8 @@ $products = [
 		'name' => 'Chery J6',
 		'img' => 'img/product/omoda/chery_j6/front.jpg',
 		'label' => '',
-		'harga' => '- Type RWD Rp. 609.8 <br> 
-						- Type IWD Rp. 679.8 JT',
+		'harga' => '- Type RWD Rp. 595.8 JT<br> 
+						- Type IWD Rp. 655.8 JT',
 		'detail' => [
 			'interior' => ['img/product/omoda/chery_j6/interior/1.png', 'img/product/omoda/chery_j6/interior/2.png', 'img/product/omoda/chery_j6/interior/3.png'],
 			'exterior' => ['img/product/omoda/chery_j6/exterior/1.png', 'img/product/omoda/chery_j6/exterior/2.png', 'img/product/omoda/chery_j6/exterior/3.png'],
@@ -208,8 +211,8 @@ $products = [
 		'name' => 'Tiggo 8',
 		'img' => 'img/product/tiggo/tiggo_8/front.jpg',
 		'label' => '',
-		'harga' => '- Type Comfort Rp. 409.8 <br> 
-						- Type Premium Rp. 450.8 <br> 
+		'harga' => '- Type Comfort Rp. 409.8 JT<br> 
+						- Type Premium Rp. 450.8 JT<br> 
 						- Type Promax Rp. 598.8 JT',
 		'detail' => [
 			'interior' => ['img/product/tiggo/tiggo_8/interior/1.png', 'img/product/tiggo/tiggo_8/interior/2.png', 'img/product/tiggo/tiggo_8/interior/3.png'],
@@ -284,8 +287,8 @@ $products = [
 		'name' => 'Tiggo Cross',
 		'img' => 'img/product/tiggo/tiggo_cross/front.jpg',
 		'label' => 'value',
-		'harga' => '- Type Comfort Rp. 289.8 <br> 
-						- Type Premium Rp. 317.8 <br> 
+		'harga' => '- Type Comfort Rp. 289.8 JT<br> 
+						- Type Premium Rp. 317.8 JT<br> 
 						- Type Sport Rp. 335.9 JT',
 		'detail' => [
 			'interior' => ['img/product/tiggo/tiggo_cross/interior/1.png', 'img/product/tiggo/tiggo_cross/interior/2.png', 'img/product/tiggo/tiggo_cross/interior/3.png'],
@@ -323,7 +326,7 @@ $products = [
 		'name' => 'Chery J6T',
 		'img' => 'img/product/omoda/chery_j6t/front.png',
 		'label' => 'new',
-		'harga' => 'xxx',
+		'harga' => '- Type RWD Rp. 609.8 <br>- Type IWD Rp. 679.8 JT',
 		'detail' => [
 			'interior' => ['img/product/omoda/chery_j6t/interior/1.png', 'img/product/omoda/chery_j6t/interior/2.png', 'img/product/omoda/chery_j6t/interior/3.png'],
 			'exterior' => ['img/product/omoda/chery_j6t/exterior/1.png', 'img/product/omoda/chery_j6t/exterior/2.png', 'img/product/omoda/chery_j6t/exterior/3.png'],
@@ -355,6 +358,46 @@ $products = [
 				'Wireless Charger 50W',
 				'Panoramic Sunroof',
 				'AC Dual Zone PM2.5 Filter'
+			]
+		]
+	],
+	[
+		'id' => '9csh',
+		'model' => 'csh',
+		'name' => 'Tiggo 9 CSH',
+		'img' => 'img/product/tiggo/tiggo_9_csh/front.jpeg',
+		'label' => '',
+		'harga' => 'Dari Rp 549.8 JT',
+		'detail' => [
+			'interior' => ['img/product/tiggo/tiggo_9_csh/interior/1.png', 'img/product/tiggo/tiggo_9_csh/interior/2.png', 'img/product/tiggo/tiggo_9_csh/interior/3.png'],
+			'exterior' => ['img/product/tiggo/tiggo_9_csh/exterior/1.jpeg', 'img/product/tiggo/tiggo_9_csh/exterior/2.jpeg', 'img/product/tiggo/tiggo_9_csh/exterior/3.jpeg'],
+			'features' => ['img/product/tiggo/tiggo_9_csh/features/1.png', 'img/product/tiggo/tiggo_9_csh/features/2.png', 'img/product/tiggo/tiggo_9_csh/features/3.png'],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'CC 1.5 Turbo PHEV',
+				'FWD',
+				'Torsi Mesin 215 Nm',
+				'Power Mesin 143 Ps',
+				'Torsi Battery 310 Nm',
+				'Power Battery 204 Ps',
+				'Range Full Hybrid Mode 1300 Km',
+				'Pure EV Mode 90 Km',
+				'V2L',
+			],
+			'safety' => [
+				'Camera 540',
+				'airbag 10',
+				'Driving Assistants 11',
+				'ADAS 14',
+			],
+			'comfort' => [
+				'Kursi 3 baris',
+				'Ban 235/50 R19',
+				'Speaker 12',
+				'Wireless Charger 50W',
+				'Panoramic Sunroof',
+				'AC Dual Zone AQS PM2.5/N95 Air Filter'
 			]
 		]
 	],
@@ -392,12 +435,10 @@ $products = [
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
 	<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css<?= $random ?>" type="text/css">
 
 	<style>
-		.img-fade {
-			transition: opacity 1s ease-in-out;
-		}
+
 	</style>
 </head>
 
@@ -481,12 +522,20 @@ $products = [
 	<section id="targetHome" class="categories">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-12 pr-0">
-					<div class="categories__item categories__large__item set-bg"
-						data-setbg="img/categories/banner_2025_09.jpg<?= $random ?>">
+				<div class="col-lg-12 pr-0 m-auto pb-2">
+					<div id="carouselBanner" class="banner__slider owl-carousel">
+						<?php foreach ($carouselImg as $img) { ?>
+							<div class="banner__item h-100">
+								<img class="img-fluid" src="<?= $img ?><?= $random ?>" alt="">
+							</div>
+						<?php } ?>
 					</div>
 				</div>
 
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="row" style="display:none">
 				<div class="col-lg-4 pr-0">
 					<div class="categories__item categories__large__item set-bg"
 						data-setbg="img/categories/category-1a.jpg<?= $random ?>">
@@ -519,45 +568,6 @@ $products = [
 						</div>
 					</div>
 				</div>
-
-				<!-- <div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-						<div class="categories__item set-bg" data-setbg="img/categories/category-2.jpg">
-							<div class="categories__text">
-								<h4>Men’s fashion</h4>
-								<p>358 items</p>
-								<a href="#">Shop now</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-						<div class="categories__item set-bg" data-setbg="img/categories/category-3.jpg">
-							<div class="categories__text">
-								<h4>Kid’s fashion</h4>
-								<p>273 items</p>
-								<a href="#">Shop now</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-						<div class="categories__item set-bg" data-setbg="img/categories/category-4.jpg">
-							<div class="categories__text">
-								<h4>Cosmetics</h4>
-								<p>159 items</p>
-								<a href="#">Shop now</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 p-0">
-						<div class="categories__item set-bg" data-setbg="img/categories/category-5.jpg">
-							<div class="categories__text">
-								<h4>Accessories</h4>
-								<p>792 items</p>
-								<a href="#">Shop now</a>
-							</div>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</section>
@@ -645,7 +655,7 @@ $products = [
 								<div class="banner__text">
 									<span><?= $product['model']; ?></span>
 									<h1><?= $product['name']; ?></h1>
-									<a href="#">Detail</a>
+									<!--<a href="#">Detail</a>-->
 								</div>
 							</div>
 							<?php
