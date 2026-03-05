@@ -15,16 +15,16 @@ $products = [
 		'id' => 1,
 		'model' => 'ice',
 		'name' => 'Chery C5',
-		'img' => 'img/product/omoda/chery_c5/front.jpg',
+		'img' => 'img/product/ice/chery_c5/front.jpg',
 		'label' => '',
 		'harga' => ' - Type Z Rp 365.9 JT <br> 
-						- Type RZ Rp. 394.9JT <br>
+						- Type RZ Rp. 394.9 JT <br>
 						- Type RZ Two Tone Rp. 399.9 JT <br>
 						- Type CS CSH Rp. 435.9 JT',
 		'detail' => [
-			'interior' => ['img/product/omoda/chery_c5/interior/1.png', 'img/product/omoda/chery_c5/interior/2.png', 'img/product/omoda/chery_c5/interior/3.png'],
-			'exterior' => ['img/product/omoda/chery_c5/exterior/1.png', 'img/product/omoda/chery_c5/exterior/2.png', 'img/product/omoda/chery_c5/exterior/3.png'],
-			'features' => ['img/product/omoda/chery_c5/features/1.png', 'img/product/omoda/chery_c5/features/2.png', 'img/product/omoda/chery_c5/features/3.png'],
+			'interior' => ['img/product/ice/chery_c5/interior/1.jpg', 'img/product/ice/chery_c5/interior/2.jpg', 'img/product/ice/chery_c5/interior/3.jpg'],
+			'exterior' => ['img/product/ice/chery_c5/exterior/1.jpg', 'img/product/ice/chery_c5/exterior/2.jpg', 'img/product/ice/chery_c5/exterior/3.jpg'],
+			'features' => ['img/product/ice/chery_c5/features/1.jpg', 'img/product/ice/chery_c5/features/2.jpg', 'img/product/ice/chery_c5/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -55,15 +55,15 @@ $products = [
 		'id' => 2,
 		'model' => 'bev',
 		'name' => 'Chery E5',
-		'img' => 'img/product/omoda/chery_e5/front.jpg',
+		'img' => 'img/product/bev/chery_e5/front.jpg',
 		'label' => 'Electric - New',
 		'harga' => '- Type E5 Pure Rp. 418.8 JT<br> 
 						- Type Single Tone Rp. 453.8 JT <br>
 						- Type Two Tone Rp. 458.8 JT',
 		'detail' => [
-			'interior' => ['img/product/omoda/chery_e5/interior/1.png', 'img/product/omoda/chery_e5/interior/2.png', 'img/product/omoda/chery_e5/interior/3.png'],
-			'exterior' => ['img/product/omoda/chery_e5/exterior/1.png', 'img/product/omoda/chery_e5/exterior/2.png', 'img/product/omoda/chery_e5/exterior/3.png'],
-			'features' => ['img/product/omoda/chery_e5/features/1.png', 'img/product/omoda/chery_e5/features/2.png', 'img/product/omoda/chery_e5/features/3.png'],
+			'interior' => ['img/product/bev/chery_e5/interior/1.jpg', 'img/product/bev/chery_e5/interior/2.jpg', 'img/product/bev/chery_e5/interior/3.jpg'],
+			'exterior' => ['img/product/bev/chery_e5/exterior/1.jpg', 'img/product/bev/chery_e5/exterior/2.jpg', 'img/product/bev/chery_e5/exterior/3.jpg'],
+			'features' => ['img/product/bev/chery_e5/features/1.jpg', 'img/product/bev/chery_e5/features/2.jpg', 'img/product/bev/chery_e5/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -97,14 +97,14 @@ $products = [
 		'id' => 3,
 		'model' => 'bev',
 		'name' => 'Chery J6',
-		'img' => 'img/product/omoda/chery_j6/front.jpg',
+		'img' => 'img/product/bev/chery_j6/front.jpg',
 		'label' => '',
 		'harga' => '- Type RWD Rp. 595.8 JT<br> 
 						- Type IWD Rp. 655.8 JT',
 		'detail' => [
-			'interior' => ['img/product/omoda/chery_j6/interior/1.png', 'img/product/omoda/chery_j6/interior/2.png', 'img/product/omoda/chery_j6/interior/3.png'],
-			'exterior' => ['img/product/omoda/chery_j6/exterior/1.png', 'img/product/omoda/chery_j6/exterior/2.png', 'img/product/omoda/chery_j6/exterior/3.png'],
-			'features' => ['img/prodct/omoda/chery_j6/features/1.png', 'img/product/omoda/chery_j6/features/2.png', 'img/product/omoda/chery_j6/features/3.png'],
+			'interior' => ['img/product/bev/chery_j6/interior/1.jpg', 'img/product/bev/chery_j6/interior/2.jpg', 'img/product/bev/chery_j6/interior/3.jpg'],
+			'exterior' => ['img/product/bev/chery_j6/exterior/1.jpg', 'img/product/bev/chery_j6/exterior/2.jpg', 'img/product/bev/chery_j6/exterior/3.jpg'],
+			'features' => ['img/product/bev/chery_j6/features/1.jpg', 'img/product/bev/chery_j6/features/2.jpg', 'img/product/bev/chery_j6/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -140,13 +140,13 @@ $products = [
 		'id' => 4,
 		'model' => 'csh',
 		'name' => 'Chery C5 CSH',
-		'img' => 'img/product/omoda/chery_c5_csh/front.jpg',
+		'img' => 'img/product/csh/chery_c5_csh/front.jpg',
 		'label' => 'new',
 		'harga' => 'Dari Rp 435.9 JT',
 		'detail' => [
-			'interior' => ['img/product/omoda/chery_c5_csh/interior/1.jpg', 'img/product/omoda/chery_c5_csh/interior/2.jpg', 'img/product/omoda/chery_c5_csh/interior/3.jpg'],
-			'exterior' => ['img/product/omoda/chery_c5_csh/exterior/1.jpg', 'img/product/omoda/chery_c5_csh/exterior/2.jpg', 'img/product/omoda/chery_c5_csh/exterior/3.jpg'],
-			'features' => ['img/product/omoda/chery_c5_csh/features/1.jpg', 'img/product/omoda/chery_c5_csh/features/2.jpg', 'img/product/omoda/chery_c5_csh/features/3.jpg'],
+			'interior' => ['img/product/csh/chery_c5_csh/interior/1.jpg', 'img/product/csh/chery_c5_csh/interior/2.jpg', 'img/product/csh/chery_c5_csh/interior/3.jpg'],
+			'exterior' => ['img/product/csh/chery_c5_csh/exterior/1.jpg', 'img/product/csh/chery_c5_csh/exterior/2.jpg', 'img/product/csh/chery_c5_csh/exterior/3.jpg'],
+			'features' => ['img/product/csh/chery_c5_csh/features/1.jpg', 'img/product/csh/chery_c5_csh/features/2.jpg', 'img/product/csh/chery_c5_csh/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -169,13 +169,13 @@ $products = [
 		'id' => 5,
 		'model' => 'csh',
 		'name' => 'Tiggo 8 CSH',
-		'img' => 'img/product/tiggo/tiggo_8_csh/front.jpg',
+		'img' => 'img/product/csh/tiggo_8_csh/front.jpg',
 		'label' => '',
 		'harga' => 'Dari Rp 549.8 JT',
 		'detail' => [
-			'interior' => ['img/product/tiggo/tiggo_8_csh/interior/1.png', 'img/product/tiggo/tiggo_8_csh/interior/2.png', 'img/product/tiggo/tiggo_8_csh/interior/3.png'],
-			'exterior' => ['img/product/tiggo/tiggo_8_csh/exterior/1.png', 'img/product/tiggo/tiggo_8_csh/exterior/2.png', 'img/product/tiggo/tiggo_8_csh/exterior/3.png'],
-			'features' => ['img/product/tiggo/tiggo_8_csh/features/1.png', 'img/product/tiggo/tiggo_8_csh/features/2.png', 'img/product/tiggo/tiggo_8_csh/features/3.png'],
+			'interior' => ['img/product/csh/tiggo_8_csh/interior/1.jpg', 'img/product/csh/tiggo_8_csh/interior/2.jpg', 'img/product/csh/tiggo_8_csh/interior/3.jpg'],
+			'exterior' => ['img/product/csh/tiggo_8_csh/exterior/1.jpg', 'img/product/csh/tiggo_8_csh/exterior/2.jpg', 'img/product/csh/tiggo_8_csh/exterior/3.jpg'],
+			'features' => ['img/product/csh/tiggo_8_csh/features/1.jpg', 'img/product/csh/tiggo_8_csh/features/2.jpg', 'img/product/csh/tiggo_8_csh/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -209,15 +209,15 @@ $products = [
 		'id' => 6,
 		'model' => 'ice',
 		'name' => 'Tiggo 8',
-		'img' => 'img/product/tiggo/tiggo_8/front.jpg',
+		'img' => 'img/product/ice/tiggo_8/front.jpg',
 		'label' => '',
 		'harga' => '- Type Comfort Rp. 409.8 JT<br> 
 						- Type Premium Rp. 450.8 JT<br> 
 						- Type Promax Rp. 598.8 JT',
 		'detail' => [
-			'interior' => ['img/product/tiggo/tiggo_8/interior/1.png', 'img/product/tiggo/tiggo_8/interior/2.png', 'img/product/tiggo/tiggo_8/interior/3.png'],
-			'exterior' => ['img/product/tiggo/tiggo_8/exterior/1.png', 'img/product/tiggo/tiggo_8/exterior/2.png', 'img/product/tiggo/tiggo_8/exterior/3.png'],
-			'features' => ['img/product/tiggo/tiggo_8/features/1.png', 'img/product/tiggo/tiggo_8/features/2.png', 'img/product/tiggo/tiggo_8/features/3.png'],
+			'interior' => ['img/product/ice/tiggo_8/interior/1.jpg', 'img/product/ice/tiggo_8/interior/2.jpg', 'img/product/ice/tiggo_8/interior/3.jpg'],
+			'exterior' => ['img/product/ice/tiggo_8/exterior/1.jpg', 'img/product/ice/tiggo_8/exterior/2.jpg', 'img/product/ice/tiggo_8/exterior/3.jpg'],
+			'features' => ['img/product/ice/tiggo_8/features/1.jpg', 'img/product/ice/tiggo_8/features/2.jpg', 'img/product/ice/tiggo_8/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -246,13 +246,13 @@ $products = [
 		'id' => 7,
 		'model' => 'ice',
 		'name' => 'Tiggo 8 Pro Max',
-		'img' => 'img/product/tiggo/tiggo_8_pro_max/front.jpg',
+		'img' => 'img/product/ice/tiggo_8_pro_max/front.jpg',
 		'label' => '',
 		'harga' => 'Dari Rp 598.8 JT',
 		'detail' => [
-			'interior' => ['img/product/tiggo/tiggo_8_pro_max/interior/1.png', 'img/product/tiggo/tiggo_8_pro_max/interior/2.png', 'img/product/tiggo/tiggo_8_pro_max/interior/3.png'],
-			'exterior' => ['img/product/tiggo/tiggo_8_pro_max/exterior/1.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/2.png', 'img/product/tiggo/tiggo_8_pro_max/exterior/3.png'],
-			'features' => ['img/product/tiggo/tiggo_8_pro_max/features/1.png', 'img/product/tiggo/tiggo_8_pro_max/features/2.png', 'img/product/tiggo/tiggo_8_pro_max/features/3.png'],
+			'interior' => ['img/product/ice/tiggo_8_pro_max/interior/1.jpg', 'img/product/ice/tiggo_8_pro_max/interior/2.jpg', 'img/product/ice/tiggo_8_pro_max/interior/3.jpg'],
+			'exterior' => ['img/product/ice/tiggo_8_pro_max/exterior/1.jpg', 'img/product/ice/tiggo_8_pro_max/exterior/2.jpg', 'img/product/ice/tiggo_8_pro_max/exterior/3.jpg'],
+			'features' => ['img/product/ice/tiggo_8_pro_max/features/1.jpg', 'img/product/ice/tiggo_8_pro_max/features/2.jpg', 'img/product/ice/tiggo_8_pro_max/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -285,15 +285,15 @@ $products = [
 		'id' => 8,
 		'model' => 'ice',
 		'name' => 'Tiggo Cross',
-		'img' => 'img/product/tiggo/tiggo_cross/front.jpg',
+		'img' => 'img/product/ice/tiggo_cross/front.jpg',
 		'label' => 'value',
 		'harga' => '- Type Comfort Rp. 289.8 JT<br> 
 						- Type Premium Rp. 317.8 JT<br> 
 						- Type Sport Rp. 335.9 JT',
 		'detail' => [
-			'interior' => ['img/product/tiggo/tiggo_cross/interior/1.png', 'img/product/tiggo/tiggo_cross/interior/2.png', 'img/product/tiggo/tiggo_cross/interior/3.png'],
-			'exterior' => ['img/product/tiggo/tiggo_cross/exterior/1.png', 'img/product/tiggo/tiggo_cross/exterior/2.png', 'img/product/tiggo/tiggo_cross/exterior/3.png'],
-			'features' => ['img/product/tiggo/tiggo_cross/features/1.png', 'img/product/tiggo/tiggo_cross/features/2.png', 'img/product/tiggo/tiggo_cross/features/3.png'],
+			'interior' => ['img/product/ice/tiggo_cross/interior/1.jpg', 'img/product/ice/tiggo_cross/interior/2.jpg', 'img/product/ice/tiggo_cross/interior/3.jpg'],
+			'exterior' => ['img/product/ice/tiggo_cross/exterior/1.jpg', 'img/product/ice/tiggo_cross/exterior/2.jpg', 'img/product/ice/tiggo_cross/exterior/3.jpg'],
+			'features' => ['img/product/ice/tiggo_cross/features/1.jpg', 'img/product/ice/tiggo_cross/features/2.jpg', 'img/product/ice/tiggo_cross/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -324,13 +324,13 @@ $products = [
 		'id' => 9,
 		'model' => 'bev',
 		'name' => 'Chery J6T',
-		'img' => 'img/product/omoda/chery_j6t/front.png',
+		'img' => 'img/product/bev/chery_j6t/front.jpg',
 		'label' => 'new',
 		'harga' => '- Type RWD Rp. 609.8 <br>- Type IWD Rp. 679.8 JT',
 		'detail' => [
-			'interior' => ['img/product/omoda/chery_j6t/interior/1.png', 'img/product/omoda/chery_j6t/interior/2.png', 'img/product/omoda/chery_j6t/interior/3.png'],
-			'exterior' => ['img/product/omoda/chery_j6t/exterior/1.png', 'img/product/omoda/chery_j6t/exterior/2.png', 'img/product/omoda/chery_j6t/exterior/3.png'],
-			'features' => ['img/product/omoda/chery_j6t/features/1.png', 'img/product/omoda/chery_j6t/features/2.png', 'img/product/omoda/chery_j6t/features/3.png'],
+			'interior' => ['img/product/bev/chery_j6t/interior/1.jpg', 'img/product/bev/chery_j6t/interior/2.jpg', 'img/product/bev/chery_j6t/interior/3.jpg'],
+			'exterior' => ['img/product/bev/chery_j6t/exterior/1.jpg', 'img/product/bev/chery_j6t/exterior/2.jpg', 'img/product/bev/chery_j6t/exterior/3.jpg'],
+			'features' => ['img/product/bev/chery_j6t/features/1.jpg', 'img/product/bev/chery_j6t/features/2.jpg', 'img/product/bev/chery_j6t/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -365,13 +365,13 @@ $products = [
 		'id' => '9csh',
 		'model' => 'csh',
 		'name' => 'Tiggo 9 CSH',
-		'img' => 'img/product/tiggo/tiggo_9_csh/front.jpeg',
+		'img' => 'img/product/csh/tiggo_9_csh/front.jpg',
 		'label' => '',
 		'harga' => 'Dari Rp 549.8 JT',
 		'detail' => [
-			'interior' => ['img/product/tiggo/tiggo_9_csh/interior/1.png', 'img/product/tiggo/tiggo_9_csh/interior/2.png', 'img/product/tiggo/tiggo_9_csh/interior/3.png'],
-			'exterior' => ['img/product/tiggo/tiggo_9_csh/exterior/1.jpeg', 'img/product/tiggo/tiggo_9_csh/exterior/2.jpeg', 'img/product/tiggo/tiggo_9_csh/exterior/3.jpeg'],
-			'features' => ['img/product/tiggo/tiggo_9_csh/features/1.png', 'img/product/tiggo/tiggo_9_csh/features/2.png', 'img/product/tiggo/tiggo_9_csh/features/3.png'],
+			'interior' => ['img/product/csh/tiggo_9_csh/interior/1.jpg', 'img/product/csh/tiggo_9_csh/interior/2.jpg', 'img/product/csh/tiggo_9_csh/interior/3.jpg'],
+			'exterior' => ['img/product/csh/tiggo_9_csh/exterior/1.jpg', 'img/product/csh/tiggo_9_csh/exterior/2.jpg', 'img/product/csh/tiggo_9_csh/exterior/3.jpg'],
+			'features' => ['img/product/csh/tiggo_9_csh/features/1.jpg', 'img/product/csh/tiggo_9_csh/features/2.jpg', 'img/product/csh/tiggo_9_csh/features/3.jpg'],
 		],
 		'spesifikasi' => [
 			'performance' => [
@@ -415,9 +415,9 @@ $products = [
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Chery Padang</title>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.jpg">
+	<link rel="icon" type="image/jpg" sizes="32x32" href="img/favicon/favicon-32x32.jpg">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.jpg">
 	<link rel="manifest" href="img/favicon/site.webmanifest">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
@@ -681,11 +681,11 @@ $products = [
 					</div>
 
 					<div class="row justify-content-around exterior">
-						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_c5/exterior/1.png"
+						<div class="col"><img class="img-fluid img-fade" src="img/product/ice/chery_c5/exterior/1.jpg"
 								alt=""></div>
-						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_e5/exterior/1.png"
+						<div class="col"><img class="img-fluid img-fade" src="img/product/bev/chery_e5/exterior/1.jpg"
 								alt=""></div>
-						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_j6/exterior/1.png"
+						<div class="col"><img class="img-fluid img-fade" src="img/product/bev/chery_j6/exterior/1.jpg"
 								alt=""></div>
 					</div>
 
@@ -698,11 +698,11 @@ $products = [
 					</div>
 					<div class="row justify-content-around interior">
 						<div class="col"><img class="img-fluid img-fade"
-								src="img/product/omoda/chery_j6t/interior/1.png" alt=""></div>
-						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_j6/interior/1.png"
+								src="img/product/bev/chery_j6t/interior/1.jpg" alt=""></div>
+						<div class="col"><img class="img-fluid img-fade" src="img/product/bev/chery_j6/interior/1.jpg"
 								alt=""></div>
 						<div class="col"><img class="img-fluid img-fade"
-								src="img/product/omoda/chery_c5_csh/interior/1.jpg" alt=""></div>
+								src="img/product/csh/chery_c5_csh/interior/1.jpg" alt=""></div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-4 align-self-center" style="padding-right: 0;">
@@ -712,12 +712,12 @@ $products = [
 						</div>
 					</div>
 					<div class="row justify-content-around features">
-						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_e5/features/1.png"
+						<div class="col"><img class="img-fluid img-fade" src="img/product/bev/chery_e5/features/1.jpg"
 								alt=""></div>
-						<div class="col"><img class="img-fluid img-fade" src="img/product/omoda/chery_j6/features/1.png"
+						<div class="col"><img class="img-fluid img-fade" src="img/product/bev/chery_j6/features/1.jpg"
 								alt=""></div>
 						<div class="col"><img class="img-fluid img-fade"
-								src="img/product/omoda/chery_c5_csh/features/1.jpg" alt=""></div>
+								src="img/product/csh/chery_c5_csh/features/1.jpg" alt=""></div>
 					</div>
 				</div>
 			</div>
