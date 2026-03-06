@@ -523,7 +523,7 @@ ol {
 -----------------------*/
 
 .banner {
-	height: 500px;
+	height: 460px;
 }
 
 .banner__text span {
@@ -625,8 +625,8 @@ ol {
 -----------------------*/
 
 .trend {
-	padding-top: 15px;
-	padding-bottom: 50px;
+	padding-top: 0;
+	padding-bottom: 20px;
 }
 
 .trend__content .section-title h4 {
@@ -1171,7 +1171,7 @@ ol {
 
 .product {
 	padding-top: 60px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 
 .filter__controls {

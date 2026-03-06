@@ -608,7 +608,7 @@ $products = [
 									<div class="label new"><?= $product['label']; ?></div>
 								<?php } ?>
 								<ul class="product__hover">
-									<li><a href="<?= $product['img']; ?>" class="image-popup"><span
+									<li><a href="<?= $product['img']; ?>" class="image-popup" title="<?= $product['name']; ?>"><span
 												class="arrow_expand"></span></a></li>
 									<!-- <li><a href="#"><span class="icon_heart_alt"></span></a></li> -->
 									<li><a href="javascript:void(0)" class='spesifikasiTrigger'
@@ -636,6 +636,8 @@ $products = [
 		</div>
 	</section>
 	<!-- Product Section End -->
+
+	<hr class="w-75"/>
 
 	<!-- Banner Section Begin -->
 	<section id="targetProduct" class="banner set-bg" data-setbg="img/banner/banner-1.png">
@@ -804,6 +806,8 @@ $products = [
 	</section>
 	Services Section End -->
 
+	<hr class="w-75 mb-5"/>
+
 	<!-- Instagram Begin -->
 	<div class="instagram mt-6">
 		<div class="container-fluid">
@@ -874,13 +878,13 @@ $products = [
 						<div class="footer__payment">
 							<a href="https://www.instagram.com/cherythetapadang/" target="_blank"><img width="40px"
 									src="img/sosmed/instagram.png" alt=""></a>
-							<a href="https://www.tiktok.com/@cherythetapadang" target="_blank"><img width="40px"
-									src="img/sosmed/tiktok.png" alt=""></a>
+							<!-- <a href="https://www.tiktok.com/@cherythetapadang" target="_blank"><img width="40px"
+									src="img/sosmed/tiktok.png" alt=""></a> -->
 							<a href="https://wa.me/6285205200021" target="_blank"><img width="40px"
 									src="img/sosmed/whatsapp.png" alt=""></a>
 							<!-- <a href="https://wa.me/62812368688" target="_blank"><img width="40px" src="img/sosmed/whatsapp.png" alt=""></a> -->
-							<a href="#" target="_blank"><img width="40px" src="img/sosmed/facebook.png" alt=""></a>
-							<a href="#" target="_blank"><img width="40px" src="img/sosmed/youtube.png" alt=""></a>
+							<!-- <a href="#" target="_blank"><img width="40px" src="img/sosmed/facebook.png" alt=""></a> -->
+							<!-- <a href="#" target="_blank"><img width="40px" src="img/sosmed/youtube.png" alt=""></a> -->
 						</div>
 					</div>
 				</div>

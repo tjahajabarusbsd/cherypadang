@@ -104,17 +104,33 @@ Created: Colorib
     */
 
 
-    const updateDetail = (data) => {
+    const updateDetail = (data, name) => {
         for (const key in data) {
             const value = data[key];
             const html = value.map((item) => {
-                return `<div class="col"><a href="${item}" class="detail-product image-popup"><img class="img-fluid img-fade" src="${item}" alt="${key}"></a></div>`;
+                const title = `${name} - ${key.charAt(0).toUpperCase() + key.slice(1)}`;
+                return `<div class="col"><a href="${item}" title="${title}" class="detail-product image-popup"><img class="img-fluid img-fade" src="${item}" alt="${key}"></a></div>`;
             }).join('');
 
             $(`div[class="row justify-content-around ${key}"]`).html(html);
 
             $('.detail-product.image-popup').magnificPopup({
-                type: 'image'
+                type: 'image',
+                image: {
+                    titleSrc: 'title'
+                },
+                gallery: {
+                    enabled: true,
+                    preload: [0, 2]
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300,
+                    easing: 'ease-in-out',
+                    opener: function (openerElement) {
+                        return openerElement.is('img') ? openerElement : openerElement.find('img');
+                    }
+                }
             });
 
         }
@@ -128,12 +144,22 @@ Created: Colorib
     /*--------------------------
         Banner Slider
     ----------------------------*/
+    let bannerCarousel = $("#carouselBanner").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: true,
+        smartSpeed: 1500,
+        autoHeight: false,
+        autoplay: true
+    });
+
     let productCarousel = $(".banner__slider").owlCarousel({
         loop: true,
         margin: 0,
         items: 1,
         dots: true,
-        smartSpeed: 1200,
+        smartSpeed: 2000,
         autoHeight: false,
         autoplay: true
     });
@@ -143,8 +169,9 @@ Created: Colorib
         const currentSlide = $(event.target).find(".owl-item").eq(currentIndex).find(".banner__item");
 
         const detail = currentSlide.data("detail");
+        const name = currentSlide.data("name");
 
-        updateDetail(detail);
+        updateDetail(detail, name);
     });
 
     /*--------------------------
