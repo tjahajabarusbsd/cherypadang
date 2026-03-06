@@ -117,7 +117,10 @@ Created: Colorib
             $('.detail-product.image-popup').magnificPopup({
                 type: 'image',
                 image: {
-                    titleSrc: 'title'
+                    titleSrc: function (item) {
+                        const title = item.el.attr('title');
+                        return title ? `${title} &middot; Chery Padang` : 'Chery Padang';
+                    }
                 },
                 gallery: {
                     enabled: true,
@@ -164,6 +167,9 @@ Created: Colorib
         autoplay: true
     });
 
+    const initialSlide = $(".banner__slider").find(".banner__item").first();
+    updateDetail(initialSlide.data("detail"), initialSlide.data("name"));
+
     productCarousel.on('changed.owl.carousel', function (event) {
         const currentIndex = event.item.index;
         const currentSlide = $(event.target).find(".owl-item").eq(currentIndex).find(".banner__item");
@@ -209,7 +215,13 @@ Created: Colorib
         Magnific
     --------------------*/
     $('.image-popup').magnificPopup({
-        type: 'image'
+        type: 'image',
+        image: {
+            titleSrc: function (item) {
+                const title = item.el.attr('title');
+                return title ? `${title} &middot; Chery Padang` : 'Chery Padang';
+            }
+        }
     });
 
 
