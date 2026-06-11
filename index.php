@@ -1,5 +1,5 @@
 <?php
-$random = '?_x=' . date('YMD');
+$random = '?_x=' . date('YMDm');
 
 // scan folder img/carousel and all the file into $carouselImg
 $carouselImg = glob('img/carousel/*.{jpg,jpeg,png}', GLOB_BRACE);
@@ -15,27 +15,26 @@ $products = [
 		'id' => 1,
 		'model' => 'ice',
 		'name' => 'Chery C5',
+		'type' => 'Omoda',
 		'img' => 'img/product/ice/chery_c5/front.jpg',
 		'label' => '',
-		'harga' => ' - Type Z Rp 365.9 JT <br> 
-						- Type RZ Rp. 394.9 JT <br>
-						- Type RZ Two Tone Rp. 399.9 JT <br>
-						- Type CS CSH Rp. 435.9 JT',
+		'harga' => ' - Type RZ Rp. 395.9 JT <br> 
+						- Type RZ Two Tone Rp. 400.9 JT',
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/ice/chery_c5/interior/1.jpg', 'title' => 'Comfort Cabin'],
-				['img' => 'img/product/ice/chery_c5/interior/2.jpg', 'title' => 'Premium Dashboard'],
+				['img' => 'img/product/ice/chery_c5/interior/1.jpg', 'title' => 'Acoustic Glass'],
+				['img' => 'img/product/ice/chery_c5/interior/2.jpg', 'title' => '64 Colour Ambient'],
 				['img' => 'img/product/ice/chery_c5/interior/3.jpg', 'title' => 'Spacious Rear Seat']
 			],
 			'exterior' => [
-				['img' => 'img/product/ice/chery_c5/exterior/1.jpg', 'title' => 'Dynamic Front Grille'],
-				['img' => 'img/product/ice/chery_c5/exterior/2.jpg', 'title' => 'Sporty Side Profile'],
-				['img' => 'img/product/ice/chery_c5/exterior/3.jpg', 'title' => 'Elegant Rear View']
+				['img' => 'img/product/ice/chery_c5/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/ice/chery_c5/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/ice/chery_c5/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/ice/chery_c5/features/1.jpg', 'title' => 'Smart Connectivity'],
-				['img' => 'img/product/ice/chery_c5/features/2.jpg', 'title' => 'Advanced Safety ADAS'],
-				['img' => 'img/product/ice/chery_c5/features/3.jpg', 'title' => 'Wireless Charging']
+				['img' => 'img/product/ice/chery_c5/features/1.jpg', 'title' => 'Apple Car Play & Android Auto'],
+				['img' => 'img/product/ice/chery_c5/features/2.jpg', 'title' => 'Dual Zone AC'],
+				['img' => 'img/product/ice/chery_c5/features/3.jpg', 'title' => 'Camera 360 ']
 			],
 		],
 		'spesifikasi' => [
@@ -44,12 +43,12 @@ $products = [
 				'RZ FWD',
 				'Z FWD',
 				'Torsi mesin 230 Nm',
-				'Power mesin 147 Ps'
+				'Driving Form : Eco / Sport'
 			],
 			'safety' => [
-				'Camera 360',
-				'airbag 6',
-				'Driving Assistants 10',
+				'360 HD Panoramic Camera',
+				'Airbag 6',
+				'Driving Assistants 4',
 				'ADAS 10',
 			],
 			'comfort' => [
@@ -62,31 +61,82 @@ $products = [
 				'Bagasi Electric (RZ)'
 			]
 		]
+
+	],
+	[
+		'id' => 4,
+		'model' => 'csh',
+		'name' => 'Chery C5 CSH',
+		'type' => 'Omoda',
+		'img' => 'img/product/csh/chery_c5_csh/front.jpg',
+		'label' => 'new',
+		'harga' => '- Type Single Tone Rp. 436.9 JT<br>- Type Two Tone Rp. 441.9 JT',
+		'detail' => [
+			'interior' => [
+				['img' => 'img/product/csh/chery_c5_csh/interior/1.jpg', 'title' => '1st Row'],
+				['img' => 'img/product/csh/chery_c5_csh/interior/2.jpg', 'title' => 'Dasboard Row 1'],
+				['img' => 'img/product/csh/chery_c5_csh/interior/3.jpg', 'title' => 'Mid Consule']
+			],
+			'exterior' => [
+				['img' => 'img/product/csh/chery_c5_csh/exterior/1.jpg', 'title' => 'Eksterior 1'],
+				['img' => 'img/product/csh/chery_c5_csh/exterior/2.jpg', 'title' => 'Eksterior 2'],
+				['img' => 'img/product/csh/chery_c5_csh/exterior/3.jpg', 'title' => 'Eksterior 3']
+			],
+			'features' => [
+				['img' => 'img/product/csh/chery_c5_csh/features/1.jpg', 'title' => 'Power Window'],
+				['img' => 'img/product/csh/chery_c5_csh/features/2.jpg', 'title' => 'DVR Connection'],
+				['img' => 'img/product/csh/chery_c5_csh/features/3.jpg', 'title' => 'Lugagge Seat Folded']
+			],
+		],
+		'spesifikasi' => [
+			'performance' => [
+				'1.5L TGDI',
+				'Transmisi DHT',
+				'Total Output 211 Hp',
+				'Torsi Mesin 215 / 2500–4000',
+				'Total Torsi 310 Nm',
+			],
+			'safety' => [
+				'Airbags 7',
+				'360 HD Panoramic Camera',
+				'ADAS 14',
+				'Driving Assistant 4',
+			],
+			'comfort' => [
+				'Kursi 2 baris',
+				'Speaker 8',
+				'Intelligent Voice Assistant (English)',
+				'Seat Heating (1st Seat Row)',
+				'HUD besar'
+			]
+		]
+
 	],
 	[
 		'id' => 2,
 		'model' => 'bev',
 		'name' => 'Chery E5',
+		'type' => 'Omoda',
 		'img' => 'img/product/bev/chery_e5/front.jpg',
 		'label' => 'Electric - New',
-		'harga' => '- Type E5 Pure Rp. 418.8 JT<br> 
-						- Type Single Tone Rp. 453.8 JT <br>
-						- Type Two Tone Rp. 458.8 JT',
+		'harga' => '- Type Single Tone Rp. 454.8 JT <br> 
+						- Type Two Tone Rp. 459.8 JT',
+
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/bev/chery_e5/interior/1.jpg', 'title' => 'Futuristic EV Cockpit'],
-				['img' => 'img/product/bev/chery_e5/interior/2.jpg', 'title' => 'Eco-Friendly Materials'],
-				['img' => 'img/product/bev/chery_e5/interior/3.jpg', 'title' => 'Panoramic View']
+				['img' => 'img/product/bev/chery_e5/interior/1.jpg', 'title' => 'Black Interior'],
+				['img' => 'img/product/bev/chery_e5/interior/2.jpg', 'title' => 'Seat Row 2'],
+				['img' => 'img/product/bev/chery_e5/interior/3.jpg', 'title' => 'New Black Dasboard Interior']
 			],
 			'exterior' => [
-				['img' => 'img/product/bev/chery_e5/exterior/1.jpg', 'title' => 'Aerodynamic EV Design'],
-				['img' => 'img/product/bev/chery_e5/exterior/2.jpg', 'title' => 'Modern LED Silhouette'],
-				['img' => 'img/product/bev/chery_e5/exterior/3.jpg', 'title' => 'Unique EV Styling']
+				['img' => 'img/product/bev/chery_e5/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/bev/chery_e5/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/bev/chery_e5/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/bev/chery_e5/features/1.jpg', 'title' => 'High Capacity Battery'],
-				['img' => 'img/product/bev/chery_e5/features/2.jpg', 'title' => 'Fast Charging Support'],
-				['img' => 'img/product/bev/chery_e5/features/3.jpg', 'title' => 'Intelligent Drive']
+				['img' => 'img/product/bev/chery_e5/features/1.jpg', 'title' => 'Qualcomm 8155 Chip'],
+				['img' => 'img/product/bev/chery_e5/features/2.jpg', 'title' => 'Power Sunroof'],
+				['img' => 'img/product/bev/chery_e5/features/3.jpg', 'title' => '540 HD Panaromic Camera']
 			],
 		],
 		'spesifikasi' => [
@@ -100,14 +150,14 @@ $products = [
 				'Kapasitas Battery 61.05 kWh',
 			],
 			'safety' => [
-				'Camera 540 (E5 FWD)',
-				'airbag 6',
+				'360 HD Panoramic Camera',
+				'Airbag 6',
 				'Driving Assistants 10',
 				'ADAS 17',
-				'V2L'
 			],
 			'comfort' => [
 				'Kursi 2 baris',
+				'Intellegent Voice Assistant',
 				'Ban 215/55 R18',
 				'Speaker 8 (E5 FWD)',
 				'Speaker 6 (Pure)',
@@ -121,25 +171,26 @@ $products = [
 		'id' => 3,
 		'model' => 'bev',
 		'name' => 'Chery J6',
+		'type' => 'J6',
 		'img' => 'img/product/bev/chery_j6/front.jpg',
 		'label' => '',
-		'harga' => '- Type RWD Rp. 595.8 JT<br> 
-						- Type IWD Rp. 655.8 JT',
+		'harga' => '- Type RWD Rp. 596.8 JT<br> 
+						- Type IWD Rp. 656.8 JT<br>- Phantom Edition +Rp. 50 JT',
 		'detail' => [
 			'interior' => [
 				['img' => 'img/product/bev/chery_j6/interior/1.jpg', 'title' => 'Rugged Interior'],
-				['img' => 'img/product/bev/chery_j6/interior/2.jpg', 'title' => 'Digital Luxury'],
-				['img' => 'img/product/bev/chery_j6/interior/3.jpg', 'title' => 'Versatile Seating']
+				['img' => 'img/product/bev/chery_j6/interior/2.jpg', 'title' => 'J6 Multi fuction Steering Wheel'],
+				['img' => 'img/product/bev/chery_j6/interior/3.jpg', 'title' => 'J6 Multi Dimensional Rubik']
 			],
 			'exterior' => [
-				['img' => 'img/product/bev/chery_j6/exterior/1.jpg', 'title' => 'Boxy SUV Design'],
-				['img' => 'img/product/bev/chery_j6/exterior/2.jpg', 'title' => 'All-Terrain Wheels'],
-				['img' => 'img/product/bev/chery_j6/exterior/3.jpg', 'title' => 'Strong Rear Guard']
+				['img' => 'img/product/bev/chery_j6/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/bev/chery_j6/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/bev/chery_j6/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/bev/chery_j6/features/1.jpg', 'title' => 'AWD Capabilities'],
-				['img' => 'img/product/bev/chery_j6/features/2.jpg', 'title' => 'Outdoor Lifestyle Kit'],
-				['img' => 'img/product/bev/chery_j6/features/3.jpg', 'title' => 'Advanced Navigation']
+				['img' => 'img/product/bev/chery_j6/features/1.jpg', 'title' => 'Ventilated AC Seats For 1st Row and 2nd Row Cabin'],
+				['img' => 'img/product/bev/chery_j6/features/2.jpg', 'title' => 'Massage Seats'],
+				['img' => 'img/product/bev/chery_j6/features/3.jpg', 'title' => 'Front Arm With Cooling System']
 			],
 		],
 		'spesifikasi' => [
@@ -153,11 +204,12 @@ $products = [
 				'Range Full Battery 426 Km (RWD)',
 			],
 			'safety' => [
-				'Camera 540',
-				'airbag 6',
+				'Camera 540 HD Panaromic',
+				'Airbag 6',
 				'Driving Assistants 14',
 				'ADAS 14',
-				'V2L'
+				'V2L',
+				'Water Protection : IP 68',
 			],
 			'comfort' => [
 				'Kursi 2 baris',
@@ -173,43 +225,61 @@ $products = [
 
 	],
 	[
-		'id' => 4,
+		'id' => '9csh',
 		'model' => 'csh',
-		'name' => 'Chery C5 CSH',
-		'img' => 'img/product/csh/chery_c5_csh/front.jpg',
-		'label' => 'new',
-		'harga' => 'Dari Rp 435.9 JT',
+		'name' => 'Tiggo 9 CSH',
+		'type' => 'Tiggo',
+		'img' => 'img/product/csh/tiggo_9_csh/front.jpg',
+		'label' => 'Luxury',
+		'harga' => '- AWD NEW Rp. 781.8 JT<br>- AWD Cosmic Grey Rp. 786.8 JT',
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/csh/chery_c5_csh/interior/1.jpg', 'title' => 'Hybrid Cockpit'],
-				['img' => 'img/product/csh/chery_c5_csh/interior/2.jpg', 'title' => 'Modern Trim'],
-				['img' => 'img/product/csh/chery_c5_csh/interior/3.jpg', 'title' => 'Ergonomic Control']
+				['img' => 'img/product/csh/tiggo_9_csh/interior/1.jpg', 'title' => 'Wide Space 2nd Row Cabin'],
+				['img' => 'img/product/csh/tiggo_9_csh/interior/2.jpg', 'title' => 'Steering Wheel With Multi Function Button Features'],
+				['img' => 'img/product/csh/tiggo_9_csh/interior/3.jpg', 'title' => 'Flat Trunk Base']
 			],
 			'exterior' => [
-				['img' => 'img/product/csh/chery_c5_csh/exterior/1.jpg', 'title' => 'CSH Signature Gille'],
-				['img' => 'img/product/csh/chery_c5_csh/exterior/2.jpg', 'title' => 'Aerodynamic Lines'],
-				['img' => 'img/product/csh/chery_c5_csh/exterior/3.jpg', 'title' => 'Premium Finish']
+				['img' => 'img/product/csh/tiggo_9_csh/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/csh/tiggo_9_csh/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/csh/tiggo_9_csh/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/csh/chery_c5_csh/features/1.jpg', 'title' => 'Dual Motor System'],
-				['img' => 'img/product/csh/chery_c5_csh/features/2.jpg', 'title' => 'Energy Management'],
-				['img' => 'img/product/csh/chery_c5_csh/features/3.jpg', 'title' => 'Smart Driving Modes']
+				['img' => 'img/product/csh/tiggo_9_csh/features/1.jpg', 'title' => 'Intelligent Parking Effortless Control'],
+				['img' => 'img/product/csh/tiggo_9_csh/features/2.jpg', 'title' => '17 ADAS'],
+				['img' => 'img/product/csh/tiggo_9_csh/features/3.jpg', 'title' => 'Electric Steering Wheel Adjuster']
 			],
 		],
 		'spesifikasi' => [
 			'performance' => [
-				'1.5L TGDI',
-				'Transmisi DHT',
-				'Total Output 211 Hp',
-				'Total Torsi 310 Nm',
+				'CC 1.5 TGDI Turbo Engine PHEV',
+				'AWD',
+				'Torsi Mesin 215 Nm',
+				'Power Mesin 143 Ps',
+				'Torsi Battery 310 Nm',
+				'Power Battery 239 Ps',
+				'Range Full Hybrid Mode 1400 Km+',
+				'Pure EV Mode 180 Km+',
+				'V2L',
 			],
 			'safety' => [
-				'airbag 8',
-				'ADAS 14',
+				'Camera 540 HD Panaromic',
+				'ISOFIX Interface',
+				'Airbag 10',
+				'Driving Assistants 13',
+				'ADAS 17',
 			],
 			'comfort' => [
-				'Kursi 2 baris',
-				'HUD besar'
+				'Kursi 3 baris',
+				'Ban 245/50 R20',
+				'Speaker 12',
+				'Voice Control',
+				'Sun Visor With Vanity Mirrors',
+				'Wireless Android Auto/Apple Car',
+				'Wireless Charger 50W',
+				'Panoramic Sunroof',
+				'Front Passenger Seat Massage',
+				'Multi Color Ambient Light',
+				'AC Dual Zone AQS PM2.5/N95 Air Filter',
 			]
 		]
 	],
@@ -217,31 +287,33 @@ $products = [
 		'id' => 5,
 		'model' => 'csh',
 		'name' => 'Tiggo 8 CSH',
+		'type' => 'Tiggo',
 		'img' => 'img/product/csh/tiggo_8_csh/front.jpg',
 		'label' => '',
-		'harga' => 'Dari Rp 549.8 JT',
+		'harga' => '- FWD Comfort Rp. 483.8 JT<br>- FWD Premium Rp. 560.9 JT<br>- AWD Premium Rp. 606.9 JT',
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/csh/tiggo_8_csh/interior/1.jpg', 'title' => '7-Seater Luxury'],
-				['img' => 'img/product/csh/tiggo_8_csh/interior/2.jpg', 'title' => 'Dual Zone AC'],
-				['img' => 'img/product/csh/tiggo_8_csh/interior/3.jpg', 'title' => 'Leather Wrapped Steering']
+				['img' => 'img/product/csh/tiggo_8_csh/interior/1.jpg', 'title' => 'Premium Interior'],
+				['img' => 'img/product/csh/tiggo_8_csh/interior/2.jpg', 'title' => 'Wide Space Trunk'],
+				['img' => 'img/product/csh/tiggo_8_csh/interior/3.jpg', 'title' => 'Premium Interior']
 			],
 			'exterior' => [
-				['img' => 'img/product/csh/tiggo_8_csh/exterior/1.jpg', 'title' => 'Grand SUV Stance'],
-				['img' => 'img/product/csh/tiggo_8_csh/exterior/2.jpg', 'title' => 'LED Matrix Headlights'],
-				['img' => 'img/product/csh/tiggo_8_csh/exterior/3.jpg', 'title' => 'Chrome Accents']
+				['img' => 'img/product/csh/tiggo_8_csh/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/csh/tiggo_8_csh/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/csh/tiggo_8_csh/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/csh/tiggo_8_csh/features/1.jpg', 'title' => 'PHEV Efficiency'],
-				['img' => 'img/product/csh/tiggo_8_csh/features/2.jpg', 'title' => 'Voice Command'],
-				['img' => 'img/product/csh/tiggo_8_csh/features/3.jpg', 'title' => 'Safety Shield']
+				['img' => 'img/product/csh/tiggo_8_csh/features/1.jpg', 'title' => '10 Airbags'],
+				['img' => 'img/product/csh/tiggo_8_csh/features/2.jpg', 'title' => 'Electric Panoramic Sunroof'],
+				['img' => 'img/product/csh/tiggo_8_csh/features/3.jpg', 'title' => 'HD Panaromic 540 HD']
 			],
 		],
 		'spesifikasi' => [
 			'performance' => [
 				'CC 1.5 Turbo PHEV',
 				'FWD',
-				'Torsi Mesin 215 Nm',
+				'Torsi Mesin 215 Nm ',
+				'Torsi Mesin 105/143ps (Premium)',
 				'Power Mesin 143 Ps',
 				'Torsi Battery 310 Nm',
 				'Power Battery 204 Ps',
@@ -250,10 +322,12 @@ $products = [
 				'V2L',
 			],
 			'safety' => [
-				'Camera 540',
-				'airbag 10',
+				'Camera 540 HD Panaromic Camera',
+				'Airbag 10',
 				'Driving Assistants 11',
 				'ADAS 14',
+				'ISOFIX Interface',
+
 			],
 			'comfort' => [
 				'Kursi 3 baris',
@@ -269,26 +343,26 @@ $products = [
 		'id' => 6,
 		'model' => 'ice',
 		'name' => 'Tiggo 8',
+		'type' => 'Tiggo',
 		'img' => 'img/product/ice/tiggo_8/front.jpg',
 		'label' => '',
-		'harga' => '- Type Comfort Rp. 409.8 JT<br> 
-						- Type Premium Rp. 450.8 JT<br> 
-						- Type Promax Rp. 598.8 JT',
+		'harga' => '- Type Comfort Rp. 410.8 JT<br> 
+						- Type Premium Rp. 451.8 JT',
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/ice/tiggo_8/interior/1.jpg', 'title' => 'Spacious Family Cabin'],
+				['img' => 'img/product/ice/tiggo_8/interior/1.jpg', 'title' => '1st Class Cabin'],
 				['img' => 'img/product/ice/tiggo_8/interior/2.jpg', 'title' => 'Soft Touch Materials'],
-				['img' => 'img/product/ice/tiggo_8/interior/3.jpg', 'title' => 'Intuitive Infotainment']
+				['img' => 'img/product/ice/tiggo_8/interior/3.jpg', 'title' => 'Panoramic Sunroof']
 			],
 			'exterior' => [
-				['img' => 'img/product/ice/tiggo_8/exterior/1.jpg', 'title' => 'Tiger Eye Headlamps'],
-				['img' => 'img/product/ice/tiggo_8/exterior/2.jpg', 'title' => '18-inch Diamond Cut Wheels'],
-				['img' => 'img/product/ice/tiggo_8/exterior/3.jpg', 'title' => 'Panoramic Sunroof Detail']
+				['img' => 'img/product/ice/tiggo_8/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/ice/tiggo_8/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/ice/tiggo_8/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/ice/tiggo_8/features/1.jpg', 'title' => 'Turbo Performance'],
-				['img' => 'img/product/ice/tiggo_8/features/2.jpg', 'title' => '360 Camera View'],
-				['img' => 'img/product/ice/tiggo_8/features/3.jpg', 'title' => 'Auto Brake System']
+				['img' => 'img/product/ice/tiggo_8/features/1.jpg', 'title' => 'AC 3rd Row'],
+				['img' => 'img/product/ice/tiggo_8/features/2.jpg', 'title' => 'Camera 360 HD'],
+				['img' => 'img/product/ice/tiggo_8/features/3.jpg', 'title' => 'Voice Command']
 			],
 		],
 		'spesifikasi' => [
@@ -300,8 +374,8 @@ $products = [
 				'Power Mesin 186 Ps',
 			],
 			'safety' => [
-				'Camera 360',
-				'airbag 6',
+				'360 HD Panoramic Camera',
+				'Airbag 6',
 				'Driving Assistants 10',
 				'ADAS 9 (Premium)',
 			],
@@ -315,104 +389,64 @@ $products = [
 		]
 	],
 	[
-		'id' => 7,
-		'model' => 'ice',
-		'name' => 'Tiggo 8 Pro Max',
-		'img' => 'img/product/ice/tiggo_8_pro_max/front.jpg',
-		'label' => '',
-		'harga' => 'Dari Rp 598.8 JT',
-		'detail' => [
-			'interior' => [
-				['img' => 'img/product/ice/tiggo_8_pro_max/interior/1.jpg', 'title' => 'VIP Lounge Interior'],
-				['img' => 'img/product/ice/tiggo_8_pro_max/interior/2.jpg', 'title' => 'Advanced Cockpit'],
-				['img' => 'img/product/ice/tiggo_8_pro_max/interior/3.jpg', 'title' => 'Luxury Seating']
-			],
-			'exterior' => [
-				['img' => 'img/product/ice/tiggo_8_pro_max/exterior/1.jpg', 'title' => 'Dominant Stance'],
-				['img' => 'img/product/ice/tiggo_8_pro_max/exterior/2.jpg', 'title' => 'AWD badging'],
-				['img' => 'img/product/ice/tiggo_8_pro_max/exterior/3.jpg', 'title' => 'Full LED Signature']
-			],
-			'features' => [
-				['img' => 'img/product/ice/tiggo_8_pro_max/features/1.jpg', 'title' => 'All Wheel Drive'],
-				['img' => 'img/product/ice/tiggo_8_pro_max/features/2.jpg', 'title' => 'Sony Audio System'],
-				['img' => 'img/product/ice/tiggo_8_pro_max/features/3.jpg', 'title' => 'Pro Max Safety']
-			],
-		],
-		'spesifikasi' => [
-			'performance' => [
-				'CC 2.0 Turbo',
-				'AWD',
-				'FWD',
-				'Torsi Mesin 390 Nm',
-				'Power Mesin 254 Ps',
-			],
-			'safety' => [
-				'Camera 360',
-				'airbag 10 (AWD)',
-				'airbag 9 (FWD)',
-				'Driving Assistants 11 (AWD)',
-				'Driving Assistants 10 (FWD)',
-				'ADAS 12',
-			],
-			'comfort' => [
-				'Kursi 3 baris',
-				'Ban 235/50 R19',
-				'Speaker 10 (AWD)',
-				'Speaker 8 (FWD)',
-				'Wireless Charger 50W',
-				'Panoramic Sunroof',
-				'AC Dual Zone N95 Air Filter'
-			]
-		]
-	],
-	[
+
 		'id' => 8,
 		'model' => 'ice',
 		'name' => 'Tiggo Cross',
+		'type' => 'Tiggo',
 		'img' => 'img/product/ice/tiggo_cross/front.jpg',
 		'label' => 'value',
-		'harga' => '- Type Comfort Rp. 289.8 JT<br> 
-						- Type Premium Rp. 317.8 JT<br> 
-						- Type Sport Rp. 335.9 JT',
+		'harga' => '- Type Comfort Rp. 290.8 JT<br> 
+						- Type Premium Rp. 318.8 JT<br> 
+						- Type Sport Rp. 336.9 JT<br>- Type CSH Rp. 367.8 JT',
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/ice/tiggo_cross/interior/1.jpg', 'title' => 'Urban Crossover Interior'],
-				['img' => 'img/product/ice/tiggo_cross/interior/2.jpg', 'title' => 'Smart Storage'],
-				['img' => 'img/product/ice/tiggo_cross/interior/3.jpg', 'title' => 'Compact Comfort']
+				['img' => 'img/product/ice/tiggo_cross/interior/1.jpg', 'title' => 'Tiggo Cross Interior'],
+				['img' => 'img/product/ice/tiggo_cross/interior/2.jpg', 'title' => 'Sunroof'],
+				['img' => 'img/product/ice/tiggo_cross/interior/3.jpg', 'title' => 'Soft Touch Material']
 			],
 			'exterior' => [
-				['img' => 'img/product/ice/tiggo_cross/exterior/1.jpg', 'title' => 'Trendy Exterior'],
-				['img' => 'img/product/ice/tiggo_cross/exterior/2.jpg', 'title' => 'Roof Rails'],
-				['img' => 'img/product/ice/tiggo_cross/exterior/3.jpg', 'title' => 'Sporty Hatch']
+				['img' => 'img/product/ice/tiggo_cross/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/ice/tiggo_cross/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/ice/tiggo_cross/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/ice/tiggo_cross/features/1.jpg', 'title' => 'Agile Handling'],
-				['img' => 'img/product/ice/tiggo_cross/features/2.jpg', 'title' => 'Modern Infotainment'],
-				['img' => 'img/product/ice/tiggo_cross/features/3.jpg', 'title' => 'Efficient Engine']
+				['img' => 'img/product/ice/tiggo_cross/features/1.jpg', 'title' => 'Car Link O'],
+				['img' => 'img/product/ice/tiggo_cross/features/2.jpg', 'title' => 'Intelligent Voice Assistant'],
+				['img' => 'img/product/ice/tiggo_cross/features/3.jpg', 'title' => '350 HD Panoramic Camera']
 			],
 		],
 		'spesifikasi' => [
 			'performance' => [
-				'CC 1.5',
+				'CC 1.5L Engine (Comfort & Premium )',
+				'1.5L Turbo Engine (Sport)',
+				'1.5L - Hybrid - DHE (CSH Comfort & Premium)',
 				'Premium FWD',
 				'Comfort FWD',
-				'Torsi Mesin 138 Nm',
-				'Power Mesin 116 Ps',
+				'Power Mesin 147Ps 210Nm',
+				'Power Mesin 116 Ps (Comfort & Premium )',
+				'Power Mesin 96Ps - 120 Nm // 204Ps - 310Nm',
 			],
 			'safety' => [
-				'Camera 360',
-				'airbag 6 (Premium)',
-				'airbag 4 (Comfort)',
+				'Airbag 6 (Premium)',
+				'Airbag 4 (Comfort)',
+				'Airbag 7 (Sport)',
+				'Airbag 6 (CSH Comfort)',
+				'Airbag 7 (CSH Premium)',
+				'360 HD Panoramic Camera',
+				'Isofix',
 				'Driving Assistants 9',
 				'ADAS 15',
 			],
 			'comfort' => [
 				'Kursi 2 baris',
+				'Intelligent Voice Assistant',
 				'Ban 215/60 R17 (Premium)',
+				'Steering Tilt and Telescopic',
 				'Ban 215/65 R16 (Comfort)',
 				'Speaker 6 (Premium)',
 				'Speaker 4 (Comfort)',
-				'Sunroof (Premium)',
+				'Electric Sunroof (Premium, Sport, CSH Premium)',
 			]
 		]
 	],
@@ -420,24 +454,25 @@ $products = [
 		'id' => 9,
 		'model' => 'bev',
 		'name' => 'Chery J6T',
+		'type' => 'J6',
 		'img' => 'img/product/bev/chery_j6t/front.jpg',
-		'label' => 'new',
-		'harga' => '- Type RWD Rp. 609.8 <br>- Type IWD Rp. 679.8 JT',
+		'label' => 'Electric new',
+		'harga' => '- Type RWD Rp. 610.8 JT <br>- Type IWD Rp. 680.8 JT',
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/bev/chery_j6t/interior/1.jpg', 'title' => 'Tech-Forward Cabin'],
-				['img' => 'img/product/bev/chery_j6t/interior/2.jpg', 'title' => 'Digital Cluster'],
-				['img' => 'img/product/bev/chery_j6t/interior/3.jpg', 'title' => 'Premium EV Finish']
+				['img' => 'img/product/bev/chery_j6t/interior/1.jpg', 'title' => 'Head Unit'],
+				['img' => 'img/product/bev/chery_j6t/interior/2.jpg', 'title' => 'Head Unit Interior'],
+				['img' => 'img/product/bev/chery_j6t/interior/3.jpg', 'title' => '15.6 inch Touch Screen Head Unit ']
 			],
 			'exterior' => [
-				['img' => 'img/product/bev/chery_j6t/exterior/1.jpg', 'title' => 'Future SUV Design'],
-				['img' => 'img/product/bev/chery_j6t/exterior/2.jpg', 'title' => 'Hidden Door Handles'],
-				['img' => 'img/product/bev/chery_j6t/exterior/3.jpg', 'title' => 'Flowing Lines']
+				['img' => 'img/product/bev/chery_j6t/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/bev/chery_j6t/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/bev/chery_j6t/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/bev/chery_j6t/features/1.jpg', 'title' => 'Quiet Drive'],
-				['img' => 'img/product/bev/chery_j6t/features/2.jpg', 'title' => 'Eco-Boost Modes'],
-				['img' => 'img/product/bev/chery_j6t/features/3.jpg', 'title' => 'Smart Grid Integration']
+				['img' => 'img/product/bev/chery_j6t/features/1.jpg', 'title' => 'J6 Front and Rear Dual Motors'],
+				['img' => 'img/product/bev/chery_j6t/features/2.jpg', 'title' => '16 ADAS'],
+				['img' => 'img/product/bev/chery_j6t/features/3.jpg', 'title' => 'Matrix Box Storage ']
 			],
 		],
 		'spesifikasi' => [
@@ -445,16 +480,17 @@ $products = [
 				'Full Listrik (EV)',
 				'IWD',
 				'RWD',
-				'Torsi 385 Nm / Power 279 PS (IWD)',
+				'Torsi 220 Nm / Power Front : 95 Ps / Rear :184 PS (IWD)',
 				'Torsi 220 Nm / Power 184 PS (RWD)',
-				'Range Full Battery 418 Km (IWD)',
-				'Range Full Battery 426 Km (RWD)',
+				'Range Full Battery 436 Km (IWD)',
+				'Range Full Battery 431 Km (RWD)',
 			],
 			'safety' => [
-				'Camera 540',
-				'airbag 6',
+				'Camera 540 HD Panaromic',
+				'Airbag 6',
 				'Driving Assistants 14',
-				'ADAS 14',
+				'ADAS 16',
+				'Water Protection : IP 68',
 				'V2L'
 			],
 			'comfort' => [
@@ -470,58 +506,57 @@ $products = [
 		]
 	],
 	[
-		'id' => '9csh',
-		'model' => 'csh',
-		'name' => 'Tiggo 9 CSH',
-		'img' => 'img/product/csh/tiggo_9_csh/front.jpg',
-		'label' => '',
-		'harga' => 'Dari Rp 549.8 JT',
+		'id' => 10,
+		'model' => 'bev',
+		'name' => 'Chery Q',
+		'type' => 'Compact EV',
+		'img' => 'img/product/bev/chery_q/front.jpg',
+		'label' => 'Electric New',
+		'harga' => 'Rp. 2XX.XXX.XXX',
 		'detail' => [
 			'interior' => [
-				['img' => 'img/product/csh/tiggo_9_csh/interior/1.jpg', 'title' => 'Sovereign Luxury'],
-				['img' => 'img/product/csh/tiggo_9_csh/interior/2.jpg', 'title' => 'Masterful Craftsmanship'],
-				['img' => 'img/product/csh/tiggo_9_csh/interior/3.jpg', 'title' => 'Ultimate Comfort']
+				['img' => 'img/product/bev/chery_q/interior/1.jpg', 'title' => 'Head Unit Dashboard'],
+				['img' => 'img/product/bev/chery_q/interior/2.jpg', 'title' => 'Front Interior'],
+				['img' => 'img/product/bev/chery_q/interior/3.jpg', 'title' => 'Rear Interior ']
 			],
 			'exterior' => [
-				['img' => 'img/product/csh/tiggo_9_csh/exterior/1.jpg', 'title' => 'Majestic Presence'],
-				['img' => 'img/product/csh/tiggo_9_csh/exterior/2.jpg', 'title' => 'Flowing Bodywork'],
-				['img' => 'img/product/csh/tiggo_9_csh/exterior/3.jpg', 'title' => '20-inch Prestige Wheels']
+				['img' => 'img/product/bev/chery_q/exterior/1.jpg', 'title' => 'Exterior 1'],
+				['img' => 'img/product/bev/chery_q/exterior/2.jpg', 'title' => 'Exterior 2'],
+				['img' => 'img/product/bev/chery_q/exterior/3.jpg', 'title' => 'Exterior 3']
 			],
 			'features' => [
-				['img' => 'img/product/csh/tiggo_9_csh/features/1.jpg', 'title' => 'CSH 3.0 Tech'],
-				['img' => 'img/product/csh/tiggo_9_csh/features/2.jpg', 'title' => 'Active Noise Cancellation'],
-				['img' => 'img/product/csh/tiggo_9_csh/features/3.jpg', 'title' => 'Level 2.5 Autonomous']
+				['img' => 'img/product/bev/chery_q/features/1.jpg', 'title' => 'Mobile Aplication.'],
+				['img' => 'img/product/bev/chery_q/features/2.jpg', 'title' => 'Fast charging 16.5 minutes'],
+				['img' => 'img/product/bev/chery_q/features/3.jpg', 'title' => 'Night Vision camera.']
 			],
 		],
 		'spesifikasi' => [
 			'performance' => [
-				'CC 1.5 Turbo PHEV',
-				'FWD',
-				'Torsi Mesin 215 Nm',
-				'Power Mesin 143 Ps',
-				'Torsi Battery 310 Nm',
-				'Power Battery 204 Ps',
-				'Range Full Hybrid Mode 1300 Km',
-				'Pure EV Mode 90 Km',
-				'V2L',
+				'Full Listrik (EV)'
 			],
 			'safety' => [
-				'Camera 540',
-				'airbag 10',
-				'Driving Assistants 11',
-				'ADAS 14',
+				'ADAS 20'
 			],
 			'comfort' => [
-				'Kursi 3 baris',
-				'Ban 235/50 R19',
-				'Speaker 12',
-				'Wireless Charger 50W',
-				'Panoramic Sunroof',
-				'AC Dual Zone AQS PM2.5/N95 Air Filter'
+				'Kursi 2 baris'
 			]
 		]
 	],
 ];
+
+
+// Urutan yang di inginkan
+$sortType = ['Tiggo', 'Omoda', 'J6'];
+
+// ** mengurutkan mobil berdasar type
+usort($products, function ($a, $b) use ($sortType) {
+	return array_search($a['type'], $sortType) <=> array_search($b['type'], $sortType);
+});
+
+// usort($products, function ($a, $b) {
+//     return $b['type'] <=> $a['type'];
+// });
+
 ?>
 
 <!DOCTYPE html>
@@ -606,7 +641,9 @@ $products = [
 						<ul>
 							<li class="active"><a href="./index.html">Home</a></li>
 							<?php foreach ($models as $model) { ?>
-								<li><a href="#targetProduk"><?= strtoupper($model) ?></a></li>
+								<li><a href="#targetProduk">
+										<?= strtoupper($model) ?>
+									</a></li>
 							<?php } ?>
 							<li><a href="#targetContact">Test Drive</a></li>
 							<li><a href="#targetContact">Contact</a></li>
@@ -712,7 +749,9 @@ $products = [
 					<ul class="filter__controls">
 						<li class="active" data-filter="*">Semua</li>
 						<?php foreach ($models as $model) { ?>
-							<li data-filter=".<?= $model; ?>"><?= strtoupper($model); ?></li>
+							<li data-filter=".<?= $model; ?>">
+								<?= strtoupper($model); ?>
+							</li>
 						<?php } ?>
 					</ul>
 				</div>
@@ -725,18 +764,22 @@ $products = [
 						<div class="product__item">
 							<div class="product__item__pic set-bg" data-setbg="<?= $product['img']; ?>">
 								<?php if ($product['label'] != '') { ?>
-									<div class="label new"><?= $product['label']; ?></div>
+									<div class="label new">
+										<?= $product['label']; ?>
+									</div>
 								<?php } ?>
 								<ul class="product__hover">
-									<li><a href="<?= $product['img']; ?>" class="image-popup" title="<?= $product['name']; ?>"><span
-												class="arrow_expand"></span></a></li>
+									<li><a href="<?= $product['img']; ?>" class="image-popup"
+											title="<?= $product['name']; ?>"><span class="arrow_expand"></span></a></li>
 									<!-- <li><a href="#"><span class="icon_heart_alt"></span></a></li> -->
 									<li><a href="javascript:void(0)" class='spesifikasiTrigger'
 											data-id='<?= $product['id']; ?>'><span class="icon_zoom-in_alt"></span></a></li>
 								</ul>
 							</div>
 							<div class="product__item__text">
-								<h6><a href="#"><?= $product['name']; ?></a></h6>
+								<h6><a href="#">
+										<?= $product['name']; ?>
+									</a></h6>
 								<div class="rating">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -744,7 +787,9 @@ $products = [
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 								</div>
-								<div class="product__price"><?= $product['harga']; ?></div>
+								<div class="product__price">
+									<?= $product['harga']; ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -757,7 +802,7 @@ $products = [
 	</section>
 	<!-- Product Section End -->
 
-	<hr class="w-75"/>
+	<hr class="w-75" />
 
 	<!-- Banner Section Begin -->
 	<section id="targetProduct" class="banner set-bg" data-setbg="img/banner/banner-1.png">
@@ -775,8 +820,12 @@ $products = [
 								data-detail='<?= json_encode($product['detail']); ?>'>
 
 								<div class="banner__text">
-									<span><?= $product['model']; ?></span>
-									<h1><?= $product['name']; ?></h1>
+									<span>
+										<?= $product['model']; ?>
+									</span>
+									<h1>
+										<?= $product['name']; ?>
+									</h1>
 									<!--<a href="#">Detail</a>-->
 								</div>
 							</div>
@@ -819,8 +868,8 @@ $products = [
 						</div>
 					</div>
 					<div class="row justify-content-around interior">
-						<div class="col"><img class="img-fluid img-fade"
-								src="img/product/bev/chery_j6t/interior/1.jpg" alt=""></div>
+						<div class="col"><img class="img-fluid img-fade" src="img/product/bev/chery_j6t/interior/1.jpg"
+								alt=""></div>
 						<div class="col"><img class="img-fluid img-fade" src="img/product/bev/chery_j6/interior/1.jpg"
 								alt=""></div>
 						<div class="col"><img class="img-fluid img-fade"
@@ -926,7 +975,7 @@ $products = [
 	</section>
 	Services Section End -->
 
-	<hr class="w-75 mb-5"/>
+	<hr class="w-75 mb-5" />
 
 	<!-- Instagram Begin -->
 	<div class="instagram mt-6">
@@ -998,8 +1047,8 @@ $products = [
 						<div class="footer__payment">
 							<a href="https://www.instagram.com/cherythetapadang/" target="_blank"><img width="40px"
 									src="img/sosmed/instagram.png" alt=""></a>
-							<!-- <a href="https://www.tiktok.com/@cherythetapadang" target="_blank"><img width="40px"
-									src="img/sosmed/tiktok.png" alt=""></a> -->
+							<a href="https://www.tiktok.com/@cherythetapadang" target="_blank"><img width="40px"
+									src="img/sosmed/tiktok.png" alt=""></a>
 							<a href="https://wa.me/6285205200021" target="_blank"><img width="40px"
 									src="img/sosmed/whatsapp.png" alt=""></a>
 							<!-- <a href="https://wa.me/62812368688" target="_blank"><img width="40px" src="img/sosmed/whatsapp.png" alt=""></a> -->
