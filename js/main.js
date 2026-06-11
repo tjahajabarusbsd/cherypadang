@@ -108,8 +108,10 @@ Created: Colorib
         for (const key in data) {
             const value = data[key];
             const html = value.map((item) => {
-                const title = `${name} - ${key.charAt(0).toUpperCase() + key.slice(1)}`;
-                return `<div class="col"><a href="${item}" title="${title}" class="detail-product image-popup"><img class="img-fluid img-fade" src="${item}" alt="${key}"></a></div>`;
+                const img = typeof item === 'object' ? item.img : item;
+                const imgTitle = typeof item === 'object' && item.title ? item.title : (key.charAt(0).toUpperCase() + key.slice(1));
+                const title = `${name} - ${imgTitle}`;
+                return `<div class="col"><a href="${img}" title="${title}" class="detail-product image-popup"><img class="img-fluid img-fade" src="${img}" alt="${key}"></a></div>`;
             }).join('');
 
             $(`div[class="row justify-content-around ${key}"]`).html(html);
